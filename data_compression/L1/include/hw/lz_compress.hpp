@@ -62,32 +62,32 @@ void lzCompress(hls::stream<ap_uint<8> >& inStream, hls::stream<ap_uint<32> >& o
 
     if (input_size == 0) return;
     // Dictionary
-    uintDictV_t dict[LZ_DICT_SIZE];
+    static uintDictV_t dict[LZ_DICT_SIZE];
 #pragma HLS BIND_STORAGE variable = dict type = RAM_T2P impl = BRAM
-    uintDictV_t resetValue = 0;
-    for (int i = 0; i < MATCH_LEVEL; i++) {
-#pragma HLS UNROLL
-        resetValue.range((i + 1) * c_dictEleWidth - 1, i * c_dictEleWidth + MATCH_LEN * 8) = -1;
-    }
+//     uintDictV_t resetValue = 0;
+//     for (int i = 0; i < MATCH_LEVEL; i++) {
+// #pragma HLS UNROLL
+//         resetValue.range((i + 1) * c_dictEleWidth - 1, i * c_dictEleWidth + MATCH_LEN * 8) = -1;
+//     }
 // Initialization of Dictionary
 dict_flush:
-    for (int i = 0; i < LZ_DICT_SIZE; i++) {
-#pragma HLS PIPELINE II = 1
-#pragma HLS UNROLL FACTOR = 2
-        dict[i] = resetValue;
-    }
+//     for (int i = 0; i < LZ_DICT_SIZE; i++) {
+// #pragma HLS PIPELINE II = 1
+// #pragma HLS UNROLL FACTOR = 2
+//         dict[i] = 0;
+//     }
 
-    uint8_t present_window[MATCH_LEN];
+    uint8_t present_window[MATCH_LEN] = {0};
 #pragma HLS ARRAY_PARTITION variable = present_window complete
     for (uint8_t i = 1; i < MATCH_LEN; i++) {
-#pragma HLS PIPELINE off
+#pragma HLS UNROLL
         present_window[i] = inStream.read();
     }
 lz_compress:
     for (uint32_t i = MATCH_LEN - 1; i < input_size - LEFT_BYTES; i++) {
 #pragma HLS PIPELINE II = 1
 #pragma HLS dependence variable = dict inter false
-        uint32_t currIdx = i - MATCH_LEN + 1;
+        ap_uint<24> currIdx = i - MATCH_LEN + 1;
         // shift present window and load next value
         for (int m = 0; m < MATCH_LEN - 1; m++) {
 #pragma HLS UNROLL
@@ -111,7 +111,7 @@ lz_compress:
 #pragma HLS UNROLL
             dictWriteValue.range((m + 1) * 8 - 1, m * 8) = present_window[m];
         }
-        dictWriteValue.range(c_dictEleWidth - 1, MATCH_LEN * 8) = currIdx;
+        dictWriteValue.range(c_dictEleWidth - 1, MATCH_LEN * 8) = ~currIdx;
         // Dictionary Update
         dict[hash] = dictWriteValue;
 
@@ -123,7 +123,7 @@ lz_compress:
             uint8_t len = 0;
             bool done = 0;
             uintDict_t compareWith = dictReadValue.range((l + 1) * c_dictEleWidth - 1, l * c_dictEleWidth);
-            uint32_t compareIdx = compareWith.range(c_dictEleWidth - 1, MATCH_LEN * 8);
+            ap_uint<24> compareIdx = ~compareWith.range(c_dictEleWidth - 1, MATCH_LEN * 8);
             for (int m = 0; m < MATCH_LEN; m++) {
                 if (present_window[m] == compareWith.range((m + 1) * 8 - 1, m * 8) && !done) {
                     len++;
