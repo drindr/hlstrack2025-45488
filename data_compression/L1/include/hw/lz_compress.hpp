@@ -63,7 +63,7 @@ void lzCompress(hls::stream<ap_uint<8> >& inStream, hls::stream<ap_uint<32> >& o
     if (input_size == 0) return;
     // Dictionary
     static uintDictV_t dict[LZ_DICT_SIZE];
-#pragma HLS BIND_STORAGE variable = dict type = RAM_T2P impl = BRAM
+    #pragma HLS BIND_STORAGE variable = dict type = RAM_T2P impl = BRAM
 //     uintDictV_t resetValue = 0;
 //     for (int i = 0; i < MATCH_LEVEL; i++) {
 // #pragma HLS UNROLL
@@ -77,20 +77,21 @@ dict_flush:
 //         dict[i] = 0;
 //     }
 
-    uint8_t present_window[MATCH_LEN] = {0};
-#pragma HLS ARRAY_PARTITION variable = present_window complete
+    uint8_t present_window[MATCH_LEN];
+    #pragma HLS ARRAY_PARTITION variable = present_window complete
     for (uint8_t i = 1; i < MATCH_LEN; i++) {
-#pragma HLS UNROLL
+    #pragma HLS UNROLL
         present_window[i] = inStream.read();
     }
 lz_compress:
-    for (uint32_t i = MATCH_LEN - 1; i < input_size - LEFT_BYTES; i++) {
-#pragma HLS PIPELINE II = 1
-#pragma HLS dependence variable = dict inter false
+    ap_uint<24> boundary = input_size - LEFT_BYTES;
+    for (ap_uint<24> i = MATCH_LEN - 1; i < boundary; i++) {
+    #pragma HLS PIPELINE II = 2
+    #pragma HLS dependence variable = dict inter false
         ap_uint<24> currIdx = i - MATCH_LEN + 1;
         // shift present window and load next value
         for (int m = 0; m < MATCH_LEN - 1; m++) {
-#pragma HLS UNROLL
+        #pragma HLS UNROLL
             present_window[m] = present_window[m + 1];
         }
         present_window[MATCH_LEN - 1] = inStream.read();
@@ -108,7 +109,7 @@ lz_compress:
         uintDictV_t dictReadValue = dict[hash];
         uintDictV_t dictWriteValue = dictReadValue << c_dictEleWidth;
         for (int m = 0; m < MATCH_LEN; m++) {
-#pragma HLS UNROLL
+        #pragma HLS UNROLL
             dictWriteValue.range((m + 1) * 8 - 1, m * 8) = present_window[m];
         }
         dictWriteValue.range(c_dictEleWidth - 1, MATCH_LEN * 8) = ~currIdx;
@@ -117,20 +118,41 @@ lz_compress:
 
         // Match search and Filtering
         // Comp dict pick
-        uint8_t match_length = 0;
-        uint32_t match_offset = 0;
+        uint8_t match_length[MATCH_LEN] = {0};
+        uint32_t match_offset[MATCH_LEN] = {0};
         for (int l = 0; l < MATCH_LEVEL; l++) {
+        #pragma HLS UNROLL
             uint8_t len = 0;
             bool done = 0;
             uintDict_t compareWith = dictReadValue.range((l + 1) * c_dictEleWidth - 1, l * c_dictEleWidth);
             ap_uint<24> compareIdx = ~compareWith.range(c_dictEleWidth - 1, MATCH_LEN * 8);
-            for (int m = 0; m < MATCH_LEN; m++) {
-                if (present_window[m] == compareWith.range((m + 1) * 8 - 1, m * 8) && !done) {
-                    len++;
-                } else {
-                    done = 1;
-                }
+            // for (int m = 0; m < MATCH_LEN; m++) {
+            //     if (present_window[m] == compareWith.range((m + 1) * 8 - 1, m * 8) && !done) {
+            //         len++;
+            //     } else {
+            //         done = 1;
+            //     }
+            // }
+
+            // 1) Parallel equality flags
+            ap_uint<MATCH_LEN> eq = 0;
+            for (int m = 0; m < MATCH_LEN; ++m) {
+            #pragma HLS UNROLL
+                uint8_t cand = compareWith.range((m + 1) * 8 - 1, m * 8);
+                eq[m] = (present_window[m] == cand);
             }
+
+            // 2) First mismatch isolation
+            ap_uint<MATCH_LEN> mm = ~eq;
+            ap_uint<MATCH_LEN> lowbit = mm & ((eq) + 1);   // isolate lowest set bit
+
+            // 3) One-hot to index via OR-reduction of constants (combinational, no adder carry chain)
+            for (int m = 0; m < MATCH_LEN; ++m) {
+            #pragma HLS UNROLL
+                len |= (lowbit[m] ? m : 0);
+            }
+            len = mm == 0? MATCH_LEN: len;
+
             if ((len >= MIN_MATCH) && (currIdx > compareIdx) && ((currIdx - compareIdx) < LZ_MAX_OFFSET_LIMIT) &&
                 ((currIdx - compareIdx - 1) >= MIN_OFFSET)) {
                 if ((len == 3) && ((currIdx - compareIdx - 1) > 4096)) {
@@ -139,27 +161,36 @@ lz_compress:
             } else {
                 len = 0;
             }
-            if (len > match_length) {
-                match_length = len;
-                match_offset = currIdx - compareIdx - 1;
+
+            match_length[l] = len;
+            match_offset[l] = currIdx - compareIdx - 1;
+        }
+
+        uint8_t match_len = 0;
+        uint32_t match_off = 0;
+        for (int l = 0; l < MATCH_LEN; l++) {
+            if (match_length[l] > match_len) {
+                match_len = match_length[l];
+                match_off = match_offset[l];
             }
         }
         ap_uint<32> outValue = 0;
         outValue.range(7, 0) = present_window[0];
-        outValue.range(15, 8) = match_length;
-        outValue.range(31, 16) = match_offset;
+        outValue.range(15, 8) = match_len;
+        outValue.range(31, 16) = match_off;
         outStream << outValue;
     }
 lz_compress_leftover:
     for (int m = 1; m < MATCH_LEN; m++) {
-#pragma HLS PIPELINE
+    #pragma HLS UNROLL
         ap_uint<32> outValue = 0;
         outValue.range(7, 0) = present_window[m];
         outStream << outValue;
     }
 lz_left_bytes:
     for (int l = 0; l < LEFT_BYTES; l++) {
-#pragma HLS PIPELINE
+    #pragma HLS PIPELINE II = 2
+    #pragma HLS UNROLL factor = 2
         ap_uint<32> outValue = 0;
         outValue.range(7, 0) = inStream.read();
         outStream << outValue;
