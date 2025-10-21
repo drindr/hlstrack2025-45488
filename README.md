@@ -159,6 +159,10 @@ hlstrack2025_队伍编码.zip
 
 ---
 
+## 参考论文
+
+* [HLSPilot: LLM-based High-Level Synthesis](https://arxiv.org/abs/2408.06810)
+
 ## 📧 联系方式
 
 - **技术答疑**：QQ 竞赛群 1022632722
