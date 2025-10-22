@@ -529,16 +529,24 @@ static inline uint32_t nextW(uint32_t W[16], ap_uint<4> idx) {
     uint32_t w14 = W[(idx + 14) & 15];
     return SSIG1(w14) + w9 + SSIG0(w1) + w0;
 }
-
+#define CH_OPT(x, y, z) (((x) & ((y) ^ (z))) ^ (z))
 // One SHA-256 round, inlined so we can call twice per loop iteration.
-static inline void sha256_round_once(uint32_t Wt,
-                                     uint32_t Kt,
+static inline void sha256_round_once(uint32_t KWt,
                                      uint32_t& a, uint32_t& b, uint32_t& c, uint32_t& d,
                                      uint32_t& e, uint32_t& f, uint32_t& g, uint32_t& h) {
 #pragma HLS inline
-    uint32_t T1 = h + BSIG1(e) + CH(e, f, g) + Kt + Wt;
-    uint32_t T2 = BSIG0(a) + MAJ(a, b, c);
+    // uint32_t T2 = BSIG0(a) + MAJ(a, b, c);
+    // uint32_t T1 = h + BSIG1(e) + CH(e, f, g) + KWt;
+    uint32_t bsig1_e = BSIG1(e);
+    uint32_t bsig0_a = BSIG0(a);
+    uint32_t ch_efg = CH_OPT(e, f, g);
+    uint32_t maj_abc = MAJ(a, b, c);
 
+    // Balanced addition tree for T1 (3 levels instead of 4)
+    uint32_t T1 = h + KWt + bsig1_e + ch_efg;  // 2-level addition
+#pragma HLS bind_op variable=T1 op=add impl=fabric latency=0
+    // T2 stays simple
+    uint32_t T2 = bsig0_a + maj_abc;
     h = g;
     g = f;
     f = e;
@@ -549,10 +557,10 @@ static inline void sha256_round_once(uint32_t Wt,
     a = T1 + T2;
 
     _XF_SECURITY_PRINT(
-        "DEBUG: Kt=%08x, Wt=%08x\n"
+        "DEBUG: KWt=%08x\n"
         "\ta=%08x, b=%08x, c=%08x, d=%08x\n"
         "\te=%08x, f=%08x, g=%08x, h=%08x\n",
-        Kt, Wt, a, b, c, d, e, f, g, h);
+        KWt, a, b, c, d, e, f, g, h);
 }
 
 // Fused scheduler + compressor, unrolled by 2 rounds per cycle (II=1).
@@ -600,7 +608,7 @@ void sha256Digest_unroll2(hls::stream<uint64_t>& nblk_strm,         // in
         // Process all blocks
         for (uint64_t n = 0; n < blk_num; ++n) {
 #pragma HLS loop_tripcount min = 1 max = 1
-#pragma HLS latency max = 33
+#pragma HLS latency max = 64
 
             _XF_SECURITY_PRINT("waiting for blk_strm\n");
             SHA256Block blk = blk_strm.read();
@@ -625,39 +633,19 @@ void sha256Digest_unroll2(hls::stream<uint64_t>& nblk_strm,         // in
             short idx = 0; // points to oldest W
 
             // Two rounds per iteration, II=1
-            for (ap_uint<7> tt = 0; tt < 64; tt += 2) {
-#pragma HLS pipeline II = 1
+            for (ap_uint<7> tt = 0; tt < 64; tt++) {
+#pragma HLS pipeline II = 2
 
                 // Wt0
-                uint32_t Wt0 = (tt < 16)
-                                   ? W[(idx + 0) & 15]
-                                   : nextW(W, idx);
-                _XF_SECURITY_PRINT("W[%d] = %x\n", idx, W[idx]);
-                if (tt >= 16) {
-                    W[idx] = Wt0;
+                ap_uint<4> idx = tt & 15;
+                if (tt >> 4 != 0) {
+                    W[idx] = nextW(W, idx);
                 }
-                idx = (idx + 1) & 15;
 
                 // Round t
-                sha256_round_once(Wt0, K[tt],
+                sha256_round_once(W[idx] + K[tt],
                                   a, b, c, d,
                                   e_, f, g, h);
-                // _XF_SECURITY_PRINT("1st round\n");
-
-                // Wt1
-                uint32_t Wt1 = (tt + 1 < 16)
-                                   ? W[(idx + 0) & 15]
-                                   : nextW(W, idx);
-                if (tt + 1 >= 16) {
-                    W[idx] = Wt1;
-                }
-                idx = (idx + 1) & 15;
-
-                // Round t+1
-                sha256_round_once(Wt1, K[tt + 1],
-                                  a, b, c, d,
-                                  e_, f, g, h);
-                // _XF_SECURITY_PRINT("2nd round\n");
             }
 
             // Accumulate
@@ -972,7 +960,7 @@ inline void sha256_top(hls::stream<ap_uint<m_width> >& msg_strm,
     // Digest block stream, and write hash stream.
     // fully pipelined version will calculate SHA-224 if hash_strm width is 224.
     // sha256Digest(nblk_strm2, end_nblk_strm2, w_strm, //
-    //              hash_strm, end_hash_strm);
+                 // hash_strm, end_hash_strm);
 } // sha256_top
 } // namespace internal
 
