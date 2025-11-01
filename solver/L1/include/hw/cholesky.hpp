@@ -30,7 +30,9 @@
 
 #include "ap_fixed.h"
 #include "hls_x_complex.h"
+#include "hls_math.h"
 #include <complex>
+#include <type_traits>
 #include "utils/std_complex_utils.h"
 #include "utils/x_matrix_utils.hpp"
 #include "hls_stream.h"
@@ -69,9 +71,9 @@ struct choleskyTraits<LowerTriangularL, RowsColsA, hls::x_complex<InputBaseType>
     typedef InputBaseType RECIP_DIAG_T;
     typedef hls::x_complex<InputBaseType> OFF_DIAG_T;
     typedef hls::x_complex<OutputBaseType> L_OUTPUT_T;
-    static const int ARCH = 1;
+    static const int ARCH = (RowsColsA <= 4 ? 2 : 1);
     static const int INNER_II = 1;
-    static const int UNROLL_FACTOR = 1;
+    static const int UNROLL_FACTOR = (RowsColsA <= 4 ? RowsColsA : 1);
     static const int UNROLL_DIM = (LowerTriangularL == true ? 1 : 2);
     static const int ARCH2_ZERO_LOOP = true;
 };
@@ -86,9 +88,9 @@ struct choleskyTraits<LowerTriangularL, RowsColsA, std::complex<InputBaseType>, 
     typedef InputBaseType RECIP_DIAG_T;
     typedef std::complex<InputBaseType> OFF_DIAG_T;
     typedef std::complex<OutputBaseType> L_OUTPUT_T;
-    static const int ARCH = 1;
+    static const int ARCH = (RowsColsA <= 4 ? 2 : 1);
     static const int INNER_II = 1;
-    static const int UNROLL_FACTOR = 1;
+    static const int UNROLL_FACTOR = (RowsColsA <= 4 ? RowsColsA : 1);
     static const int UNROLL_DIM = (LowerTriangularL == true ? 1 : 2);
     static const int ARCH2_ZERO_LOOP = true;
 };
@@ -120,9 +122,9 @@ struct choleskyTraits<LowerTriangularL, RowsColsA, ap_fixed<W1, I1, Q1, O1, N1>,
     typedef ap_fixed<2 + (W2 - I2) + W2, 2 + (W2 - I2), AP_RND_CONV, AP_SAT, 0> RECIP_DIAG_T;
     typedef ap_fixed<W2, I2, AP_RND_CONV, AP_SAT, 0>
         L_OUTPUT_T; // Takes new L value.  Same as L output but saturation set
-    static const int ARCH = 1;
+    static const int ARCH = (RowsColsA <= 4 ? 2 : 1);
     static const int INNER_II = 1;
-    static const int UNROLL_FACTOR = 1;
+    static const int UNROLL_FACTOR = (RowsColsA <= 4 ? RowsColsA : 1);
     static const int UNROLL_DIM = (LowerTriangularL == true ? 1 : 2);
     static const int ARCH2_ZERO_LOOP = true;
 };
@@ -157,9 +159,9 @@ struct choleskyTraits<LowerTriangularL,
     typedef ap_fixed<2 + (W2 - I2) + W2, 2 + (W2 - I2), AP_RND_CONV, AP_SAT, 0> RECIP_DIAG_T;
     typedef hls::x_complex<ap_fixed<W2, I2, AP_RND_CONV, AP_SAT, 0> >
         L_OUTPUT_T; // Takes new L value.  Same as L output but saturation set
-    static const int ARCH = 1;
+    static const int ARCH = (RowsColsA <= 4 ? 2 : 1);
     static const int INNER_II = 1;
-    static const int UNROLL_FACTOR = 1;
+    static const int UNROLL_FACTOR = (RowsColsA <= 4 ? RowsColsA : 1);
     static const int UNROLL_DIM = (LowerTriangularL == true ? 1 : 2);
     static const int ARCH2_ZERO_LOOP = true;
 };
@@ -194,7 +196,7 @@ struct choleskyTraits<LowerTriangularL,
     typedef ap_fixed<2 + (W2 - I2) + W2, 2 + (W2 - I2), AP_RND_CONV, AP_SAT, 0> RECIP_DIAG_T;
     typedef std::complex<ap_fixed<W2, I2, AP_RND_CONV, AP_SAT, 0> >
         L_OUTPUT_T; // Takes new L value.  Same as L output but saturation set
-    static const int ARCH = 1;
+    static const int ARCH = (RowsColsA <= 4 ? 2 : 1);
     static const int INNER_II = 1;
     static const int UNROLL_FACTOR = 1;
     static const int UNROLL_DIM = (LowerTriangularL == true ? 1 : 2);
@@ -220,6 +222,20 @@ Function_cholesky_sqrt_op_real:;
     b = x_sqrt(a);
     return (0);
 }
+// Square root for ap_fixed
+template <int W, int I, ap_q_mode Q, ap_o_mode O, int N, typename T_OUT>
+int cholesky_sqrt_op(ap_fixed<W, I, Q, O, N> a, T_OUT& b) {
+#pragma HLS inline
+    const ap_fixed<W, I, Q, O, N> ZERO = 0;
+    if (a < ZERO) {
+        b = static_cast<T_OUT>(0);
+        return 1;
+    }
+    float a_f = static_cast<float>(a);
+    float sqrt_val = hls::sqrtf(a_f);
+    b = static_cast<T_OUT>(sqrt_val);
+    return 0;
+}
 template <typename T_IN, typename T_OUT>
 int cholesky_sqrt_op(hls::x_complex<T_IN> din, hls::x_complex<T_OUT>& dout) {
 Function_cholesky_sqrt_op_complex:;
@@ -235,6 +251,23 @@ Function_cholesky_sqrt_op_complex:;
     dout.real(x_sqrt(a));
     return (0);
 }
+// Square root for hls::x_complex<ap_fixed>
+template <int W, int I, ap_q_mode Q, ap_o_mode O, int N, typename T_OUT>
+int cholesky_sqrt_op(hls::x_complex<ap_fixed<W, I, Q, O, N> > din, hls::x_complex<T_OUT>& dout) {
+#pragma HLS inline
+    const ap_fixed<W, I, Q, O, N> ZERO = 0;
+    ap_fixed<W, I, Q, O, N> a = din.real();
+    if (a < ZERO) {
+        dout.real(static_cast<T_OUT>(0));
+        dout.imag(static_cast<T_OUT>(0));
+        return 1;
+    }
+    float sqrt_val = hls::sqrtf(static_cast<float>(a));
+    T_OUT out_val = static_cast<T_OUT>(sqrt_val);
+    dout.real(out_val);
+    dout.imag(static_cast<T_OUT>(0));
+    return 0;
+}
 template <typename T_IN, typename T_OUT>
 int cholesky_sqrt_op(std::complex<T_IN> din, std::complex<T_OUT>& dout) {
 Function_cholesky_sqrt_op_complex:;
@@ -249,6 +282,23 @@ Function_cholesky_sqrt_op_complex:;
 
     dout.real(x_sqrt(a));
     return (0);
+}
+// Square root for std::complex<ap_fixed>
+template <int W, int I, ap_q_mode Q, ap_o_mode O, int N, typename T_OUT>
+int cholesky_sqrt_op(std::complex<ap_fixed<W, I, Q, O, N> > din, std::complex<T_OUT>& dout) {
+#pragma HLS inline
+    const ap_fixed<W, I, Q, O, N> ZERO = 0;
+    ap_fixed<W, I, Q, O, N> a = din.real();
+    if (a < ZERO) {
+        dout.real(static_cast<T_OUT>(0));
+        dout.imag(static_cast<T_OUT>(0));
+        return 1;
+    }
+    float sqrt_val = hls::sqrtf(static_cast<float>(a));
+    T_OUT out_val = static_cast<T_OUT>(sqrt_val);
+    dout.real(out_val);
+    dout.imag(static_cast<T_OUT>(0));
+    return 0;
 }
 
 // Reciprocal square root.
@@ -266,6 +316,36 @@ Function_cholesky_rsqrt_fixed:;
     sqrt_res = x_sqrt(x);
     sqrt_res_cast = sqrt_res;
     res = one / sqrt_res_cast;
+}
+
+// Extract real part helper
+template <typename T>
+inline T cholesky_real_part(const T& v) {
+#pragma HLS inline
+    return v;
+}
+template <typename T>
+inline T cholesky_real_part(const hls::x_complex<T>& v) {
+#pragma HLS inline
+    return v.real();
+}
+template <typename T>
+inline T cholesky_real_part(const std::complex<T>& v) {
+#pragma HLS inline
+    return v.real();
+}
+
+// Reciprocal using the already computed diagonal value
+template <typename DiagType, typename RecipType>
+inline void cholesky_diag_recip(const DiagType& diag_in, RecipType& recip_out) {
+#pragma HLS inline
+    RecipType one = 1;
+    RecipType diag_val = cholesky_real_part(diag_in);
+    if (diag_val != 0) {
+        recip_out = one / diag_val;
+    } else {
+        recip_out = 0;
+    }
 }
 
 // Local multiplier to handle a complex case currently not supported by the hls::x_complex class
@@ -423,7 +503,6 @@ int choleskyAlt(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA]
     typename CholeskyTraits::ACCUM_T square_sum;
     typename CholeskyTraits::ACCUM_T A_cast_to_sum;
     typename CholeskyTraits::ADD_T A_minus_sum;
-    typename CholeskyTraits::DIAG_T A_minus_sum_cast_diag;
     typename CholeskyTraits::DIAG_T new_L_diag;
     typename CholeskyTraits::RECIP_DIAG_T new_L_diag_recip;
     typename CholeskyTraits::PROD_T prod;
@@ -433,7 +512,6 @@ int choleskyAlt(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA]
     typename CholeskyTraits::RECIP_DIAG_T L_diag_recip;
     typename CholeskyTraits::OFF_DIAG_T new_L_off_diag;
     typename CholeskyTraits::L_OUTPUT_T new_L;
-    typename CholeskyTraits::L_OUTPUT_T new_L_recip;
 
 row_loop:
     for (int i = 0; i < RowsColsA; i++) {
@@ -494,10 +572,8 @@ row_loop:
         }
         // Round to target format using method specifed by traits defined types.
         new_L = new_L_diag;
-        // Generate the reciprocal of the diagonal for internal use to aviod the latency of a divide in every
-        // off-diagonal calculation
-        A_minus_sum_cast_diag = A_minus_sum;
-        cholesky_rsqrt(hls::x_real(A_minus_sum_cast_diag), new_L_diag_recip);
+        // Generate the reciprocal of the diagonal for internal use to avoid recalculating the square root
+        cholesky_diag_recip(new_L, new_L_diag_recip);
         // Store diagonal value
         diag_internal[i] = new_L_diag_recip;
         if (LowerTriangularL == true) {
@@ -510,6 +586,134 @@ row_loop:
 }
 
 // ===================================================================================================================
+// Specialized small-matrix implementation (RowsColsA == 3) with fully unrolled operations
+template <bool LowerTriangularL,
+          int RowsColsA,
+          typename CholeskyTraits,
+          class InputType,
+          class OutputType>
+typename std::enable_if<RowsColsA == 3, int>::type choleskySmall(const InputType A[RowsColsA][RowsColsA],
+                                                                 OutputType L[RowsColsA][RowsColsA]) {
+#pragma HLS INLINE
+    int return_code = 0;
+
+    OutputType L_internal[RowsColsA][RowsColsA];
+#pragma HLS ARRAY_PARTITION variable = L_internal complete dim = 0
+
+init_internal_loop_i:
+    for (int i = 0; i < RowsColsA; ++i) {
+#pragma HLS UNROLL
+    init_internal_loop_j:
+        for (int j = 0; j < RowsColsA; ++j) {
+#pragma HLS UNROLL
+            L_internal[i][j] = 0;
+        }
+    }
+
+    typename CholeskyTraits::L_OUTPUT_T diag_val;
+    typename CholeskyTraits::RECIP_DIAG_T diag_recip0;
+    typename CholeskyTraits::RECIP_DIAG_T diag_recip1;
+
+    // Column 0
+    typename CholeskyTraits::ACCUM_T diag0_input = A[0][0];
+    float diag0_real = static_cast<float>(hls::x_real(diag0_input));
+    float diag0_sqrt = 0.0f;
+    if (diag0_real < 0.0f) {
+        return_code = 1;
+    } else {
+        diag0_sqrt = hls::sqrtf(diag0_real);
+    }
+    diag_val = diag0_sqrt;
+    diag_recip0 = (diag0_sqrt > 0.0f) ? static_cast<typename CholeskyTraits::RECIP_DIAG_T>(1.0f / diag0_sqrt)
+                                      : static_cast<typename CholeskyTraits::RECIP_DIAG_T>(0);
+    L_internal[0][0] = diag_val;
+
+col0_offdiag_loop:
+    for (int i = 1; i < RowsColsA; ++i) {
+#pragma HLS UNROLL
+        typename CholeskyTraits::ACCUM_T acc = A[i][0];
+        typename CholeskyTraits::OFF_DIAG_T off_tmp = acc;
+        typename CholeskyTraits::OFF_DIAG_T off_val;
+        cholesky_prod_sum_mult(off_tmp, diag_recip0, off_val);
+        L_internal[i][0] = off_val;
+    }
+
+    // Column 1
+    typename CholeskyTraits::ACCUM_T diag1_sum = A[1][1];
+    typename CholeskyTraits::ACCUM_T l10_acc = L_internal[1][0];
+    diag1_sum -= hls::x_conj(l10_acc) * l10_acc;
+    float diag1_real = static_cast<float>(hls::x_real(diag1_sum));
+    float diag1_sqrt = 0.0f;
+    if (diag1_real < 0.0f) {
+        return_code = 1;
+    } else {
+        diag1_sqrt = hls::sqrtf(diag1_real);
+    }
+    diag_val = diag1_sqrt;
+    diag_recip1 = (diag1_sqrt > 0.0f) ? static_cast<typename CholeskyTraits::RECIP_DIAG_T>(1.0f / diag1_sqrt)
+                                      : static_cast<typename CholeskyTraits::RECIP_DIAG_T>(0);
+    L_internal[1][1] = diag_val;
+
+    typename CholeskyTraits::ACCUM_T l20_acc = L_internal[2][0];
+    typename CholeskyTraits::ACCUM_T sum21 = A[2][1];
+    sum21 -= l20_acc * hls::x_conj(l10_acc);
+    typename CholeskyTraits::OFF_DIAG_T off_tmp21 = sum21;
+    typename CholeskyTraits::OFF_DIAG_T off_val21;
+    cholesky_prod_sum_mult(off_tmp21, diag_recip1, off_val21);
+    L_internal[2][1] = off_val21;
+
+    // Column 2
+    typename CholeskyTraits::ACCUM_T diag2_sum = A[2][2];
+    diag2_sum -= hls::x_conj(l20_acc) * l20_acc;
+    typename CholeskyTraits::ACCUM_T l21_acc = L_internal[2][1];
+    diag2_sum -= hls::x_conj(l21_acc) * l21_acc;
+    float diag2_real = static_cast<float>(hls::x_real(diag2_sum));
+    float diag2_sqrt = 0.0f;
+    if (diag2_real < 0.0f) {
+        return_code = 1;
+    } else {
+        diag2_sqrt = hls::sqrtf(diag2_real);
+    }
+    diag_val = diag2_sqrt;
+    L_internal[2][2] = diag_val;
+
+write_output_loop_i:
+    for (int i = 0; i < RowsColsA; ++i) {
+#pragma HLS UNROLL
+    write_output_loop_j:
+        for (int j = 0; j < RowsColsA; ++j) {
+#pragma HLS UNROLL
+            if (LowerTriangularL) {
+                if (i >= j) {
+                    L[i][j] = L_internal[i][j];
+                } else {
+                    L[i][j] = 0;
+                }
+            } else {
+                if (i <= j) {
+                    L[i][j] = hls::x_conj(L_internal[j][i]);
+                } else {
+                    L[i][j] = 0;
+                }
+            }
+        }
+    }
+
+    return return_code;
+}
+
+template <bool LowerTriangularL,
+          int RowsColsA,
+          typename CholeskyTraits,
+          class InputType,
+          class OutputType>
+typename std::enable_if<(RowsColsA != 3), int>::type choleskySmall(const InputType A[RowsColsA][RowsColsA],
+                                                                   OutputType L[RowsColsA][RowsColsA]) {
+#pragma HLS INLINE
+    return choleskyAlt<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
+}
+
+// ===================================================================================================================
 // choleskyAlt2: Further improved latency architecture requiring higher resource
 template <bool LowerTriangularL, int RowsColsA, typename CholeskyTraits, class InputType, class OutputType>
 int choleskyAlt2(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA][RowsColsA]) {
@@ -519,10 +723,8 @@ int choleskyAlt2(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA
     // optimized/packed triangular matrix.
     OutputType L_internal[RowsColsA][RowsColsA];
     OutputType prod_column_top;
-    typename CholeskyTraits::ACCUM_T square_sum_array[RowsColsA];
     typename CholeskyTraits::ACCUM_T A_cast_to_sum;
     typename CholeskyTraits::ADD_T A_minus_sum;
-    typename CholeskyTraits::DIAG_T A_minus_sum_cast_diag;
     typename CholeskyTraits::DIAG_T new_L_diag;
     typename CholeskyTraits::RECIP_DIAG_T new_L_diag_recip;
     typename CholeskyTraits::PROD_T prod;
@@ -532,22 +734,36 @@ int choleskyAlt2(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA
     typename CholeskyTraits::OFF_DIAG_T prod_cast_to_off_diag;
     typename CholeskyTraits::OFF_DIAG_T new_L_off_diag;
     typename CholeskyTraits::L_OUTPUT_T new_L;
+    typename CholeskyTraits::ACCUM_T diag_square_sum;
 
 #pragma HLS ARRAY_PARTITION variable = A cyclic dim = CholeskyTraits::UNROLL_DIM factor = CholeskyTraits::UNROLL_FACTOR
 #pragma HLS ARRAY_PARTITION variable = L cyclic dim = CholeskyTraits::UNROLL_DIM factor = CholeskyTraits::UNROLL_FACTOR
 #pragma HLS ARRAY_PARTITION variable = L_internal cyclic dim = CholeskyTraits::UNROLL_DIM factor = \
     CholeskyTraits::UNROLL_FACTOR
-#pragma HLS ARRAY_PARTITION variable = square_sum_array cyclic dim = 1 factor = CholeskyTraits::UNROLL_FACTOR
 #pragma HLS ARRAY_PARTITION variable = product_sum_array cyclic dim = 1 factor = CholeskyTraits::UNROLL_FACTOR
 
 col_loop:
     for (int j = 0; j < RowsColsA; j++) {
+        // Accumulate the contribution from previously computed entries on row j
+        if (j == 0) {
+            diag_square_sum = 0;
+        } else {
+            diag_square_sum = 0;
+        diag_acc_loop:
+            for (int k = 0; k < RowsColsA; k++) {
+#pragma HLS UNROLL factor = CholeskyTraits::UNROLL_FACTOR
+                if (k < j) {
+                    OutputType ljk = L_internal[j][k];
+                    diag_square_sum += hls::x_conj(ljk) * ljk;
+                }
+            }
+        }
         // Diagonal calculation
         A_cast_to_sum = A[j][j];
         if (j == 0) {
             A_minus_sum = A_cast_to_sum;
         } else {
-            A_minus_sum = A_cast_to_sum - square_sum_array[j];
+            A_minus_sum = A_cast_to_sum - diag_square_sum;
         }
         if (cholesky_sqrt_op(A_minus_sum, new_L_diag)) {
 #ifndef __SYNTHESIS__
@@ -557,10 +773,8 @@ col_loop:
         }
         // Round to target format using method specifed by traits defined types.
         new_L = new_L_diag;
-        // Generate the reciprocal of the diagonal for internal use to aviod the latency of a divide in every
-        // off-diagonal calculation
-        A_minus_sum_cast_diag = A_minus_sum;
-        cholesky_rsqrt(hls::x_real(A_minus_sum_cast_diag), new_L_diag_recip);
+        // Generate the reciprocal of the diagonal for internal use to avoid recalculating the square root
+        cholesky_diag_recip(new_L, new_L_diag_recip);
         // Store diagonal value
         if (LowerTriangularL == true) {
             L[j][j] = new_L;
@@ -616,12 +830,6 @@ col_loop:
                         cholesky_prod_sum_mult(prod_cast_to_off_diag, new_L_diag_recip, new_L_off_diag);
                         // Round to target format using method specifed by traits defined types.
                         new_L = new_L_off_diag;
-                        // Build sum for use in diagonal calculation for this row.
-                        if (k == 0) {
-                            square_sum_array[j] = hls::x_conj(new_L) * new_L;
-                        } else {
-                            square_sum_array[j] = hls::x_conj(new_L) * new_L;
-                        }
                         // Store result
                         L_internal[i][j] = new_L;
                         // NOTE: Use the upper/lower triangle zeroing in the subsequent loop so the double memory access
@@ -675,7 +883,7 @@ int choleskyTop(const InputType A[RowsColsA][RowsColsA], OutputType L[RowsColsA]
         case 0:
             return choleskyBasic<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
         case 1:
-            return choleskyAlt<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
+            return choleskySmall<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
         case 2:
             return choleskyAlt2<LowerTriangularL, RowsColsA, CholeskyTraits, InputType, OutputType>(A, L);
         default:
@@ -707,9 +915,11 @@ int cholesky(hls::stream<InputType>& matrixAStrm, hls::stream<OutputType>& matri
     InputType A[RowsColsA][RowsColsA];
     OutputType L[RowsColsA][RowsColsA];
 
+read_matrix_rows:
     for (int r = 0; r < RowsColsA; r++) {
-#pragma HLS PIPELINE
+    read_matrix_cols:
         for (int c = 0; c < RowsColsA; c++) {
+#pragma HLS PIPELINE II = 1
             matrixAStrm.read(A[r][c]);
         }
     }
@@ -717,9 +927,11 @@ int cholesky(hls::stream<InputType>& matrixAStrm, hls::stream<OutputType>& matri
     int ret = 0;
     ret = choleskyTop<LowerTriangularL, RowsColsA, TRAITS, InputType, OutputType>(A, L);
 
+write_matrix_rows:
     for (int r = 0; r < RowsColsA; r++) {
-#pragma HLS PIPELINE
+    write_matrix_cols:
         for (int c = 0; c < RowsColsA; c++) {
+#pragma HLS PIPELINE II = 1
             matrixLStrm.write(L[r][c]);
         }
     }
