@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "7",
+    "file": "test.cpp",
+    "fileloc": 65,
+    "instructions": 2,
+    "name": "test_hmac_sha256",
+    "total_instructions": 2413
+  },
+  "1": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 207,
+    "instructions": 29,
+    "name": "mergeKopad<32, 64, 256, 32, 64>",
+    "total_instructions": 29
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "9 5",
+    "file": "sha224_256.hpp",
+    "fileloc": 911,
+    "instructions": 15,
+    "name": "sha256_top<32, 256>",
+    "total_instructions": 1033
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "test.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "hash",
+    "total_instructions": 1035
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1 11",
+    "file": "hmac.hpp",
+    "fileloc": 236,
+    "instructions": 15,
+    "name": "resHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1079
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 143,
+    "instructions": 41,
+    "name": "mergeKipad<32, 64, 256, 64>",
+    "total_instructions": 41
+  },
+  "4": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 110,
+    "instructions": 213,
+    "name": "kpad<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 213
+  },
+  "5": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 568,
+    "instructions": 217,
+    "name": "sha256Digest_unroll2<256>",
+    "total_instructions": 266
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "3 8",
+    "file": "hmac.hpp",
+    "fileloc": 180,
+    "instructions": 15,
+    "name": "msgHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1091
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "4 6 2",
+    "file": "hmac.hpp",
+    "fileloc": 260,
+    "instructions": 28,
+    "name": "hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 2411
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "10",
+    "file": "test.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "hash",
+    "total_instructions": 1035
+  },
+  "9": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 82,
+    "instructions": 432,
+    "name": "preProcessing",
+    "total_instructions": 752
+  }
+}

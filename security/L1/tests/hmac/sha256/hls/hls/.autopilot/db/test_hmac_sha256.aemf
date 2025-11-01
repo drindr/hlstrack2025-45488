@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1761984583539">
+  <ports id="1" name="keyStrm" type="PortType" originalName="keyStrm" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="msgStrm" type="PortType" originalName="msgStrm" coreId="4294967295" bitwidth="32" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="lenStrm" type="PortType" originalName="lenStrm" coreId="4294967295" bitwidth="64" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="4" name="eLenStrm" type="PortType" originalName="eLenStrm" coreId="4294967295" bitwidth="1" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="hshStrm" type="PortType" originalName="hshStrm" coreName="FIFO_LUTRAM" coreId="4294967295" bitwidth="256" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="6" name="eHshStrm" type="PortType" originalName="eHshStrm" coreName="FIFO_LUTRAM" coreId="4294967295" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="27" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="28" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="29" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="30" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@ports.4"/>
+  <edges id="32" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@ports.5"/>
+  <blocks id="24" name="test_hmac_sha256" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln346" lineNumber="346" fileName="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp" fileDirectory="../." rtlName="grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38" coreId="4294967295" contextFuncName="hmac_32_64_256_32_64_sha256_wrapper_s" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp" linenumber="346" fileDirectory="/home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256" functionName="hmac&amp;lt;32, 64, 256, 32, 64, sha256_wrapper&amp;gt;"/>
+      <inlineStackInfo fileName="test.cpp" linenumber="71" fileDirectory="/home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256" functionName="test_hmac_sha256"/>
+      <dataInputObjs>keyStrm</dataInputObjs>
+      <dataInputObjs>msgStrm</dataInputObjs>
+      <dataInputObjs>lenStrm</dataInputObjs>
+      <dataInputObjs>eLenStrm</dataInputObjs>
+      <dataOutputObjs>hshStrm</dataOutputObjs>
+      <dataOutputObjs>eHshStrm</dataOutputObjs>
+      <constName>hmacDataflow_32_64_256_32_64_sha256_wrapper_s</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln73" lineNumber="73" fileName="test.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="test_hmac_sha256" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="test.cpp" linenumber="73" fileDirectory="/home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256" functionName="test_hmac_sha256"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="test.cpp">
+      <validLinenumbers>73</validLinenumbers>
+      <validLinenumbers>71</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp">
+      <validLinenumbers>346</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <moduleNodes realName="grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38">
+    <nodeIds>22</nodeIds>
+  </moduleNodes>
+  <ioPorts name="eHshStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="eLenStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="hshStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="keyStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="lenStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="msgStrm">
+    <contents name="call">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="22" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="test_hmac_sha256" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <basicBlocks>24</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

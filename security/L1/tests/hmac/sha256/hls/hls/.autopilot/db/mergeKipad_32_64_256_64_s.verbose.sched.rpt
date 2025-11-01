@@ -1,0 +1,207 @@
+
+
+================================================================
+== Vitis HLS Report for 'mergeKipad_32_64_256_64_s'
+================================================================
+* Date:           Sat Nov  1 16:09:41 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.00 ns|  7.268 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_152_1  |        ?|        ?|         ?|          -|          -|     ?|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %eMergeKipadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mergeKipadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 10 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mergeKipadStrm, i64 666, i64 8, i64 18446744073709551615"   --->   Operation 11 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %eKipadStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %kipadStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %kopadStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %kopad2Strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %eMergeKipadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mergeKipadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mergeKipadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %lenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %msgStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %eKipadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %kipadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %kopadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %kopad2Strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%br_ln152 = br void %while.cond" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152]   --->   Operation 25 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.26>
+ST_2 : Operation 26 [1/1] ( I:3.63ns O:3.63ns )   --->   "%eKipadStrm_read = read i1 @_ssdm_op_Read.ap_fifo.volatile.i1P0A, i1 %eKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152]   --->   Operation 26 'read' 'eKipadStrm_read' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %eKipadStrm_read, void %VITIS_LOOP_162_2, void %while.end" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152]   --->   Operation 27 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] ( I:3.47ns O:3.47ns )   --->   "%ml = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %lenStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:155]   --->   Operation 28 'read' 'ml' <Predicate = (!eKipadStrm_read)> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 29 [1/1] ( I:3.63ns O:3.63ns )   --->   "%kipad = read i512 @_ssdm_op_Read.ap_fifo.volatile.i512P0A, i512 %kipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:160]   --->   Operation 29 'read' 'kipad' <Predicate = (!eKipadStrm_read)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 4> <FIFO>
+ST_2 : Operation 30 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln176 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %eMergeKipadLenStrm, i1 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:176]   --->   Operation 30 'write' 'write_ln176' <Predicate = (eKipadStrm_read)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%ret_ln177 = ret" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:177]   --->   Operation 31 'ret' 'ret_ln177' <Predicate = (eKipadStrm_read)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.15>
+ST_3 : Operation 32 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln153 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %eMergeKipadLenStrm, i1 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:153]   --->   Operation 32 'write' 'write_ln153' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_3 : Operation 33 [1/1] (3.52ns)   --->   "%mergeKipadLen = add i64 %ml, i64 64" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:156]   --->   Operation 33 'add' 'mergeKipadLen' <Predicate = true> <Delay = 3.52> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln158 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %mergeKipadLenStrm, i64 %mergeKipadLen" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:158]   --->   Operation 34 'write' 'write_ln158' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 4> <FIFO>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i67 @_ssdm_op_BitConcatenate.i67.i64.i3, i64 %ml, i3 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 35 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%p_cast = zext i67 %tmp" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 36 'zext' 'p_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (3.60ns)   --->   "%add_ln171 = add i68 %p_cast, i68 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 37 'add' 'add_ln171' <Predicate = true> <Delay = 3.60> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.60> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i63 @_ssdm_op_PartSelect.i63.i68.i32.i32, i68 %add_ln171, i32 5, i32 67" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 38 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 1.58>
+ST_4 : Operation 39 [1/1] (0.00ns)   --->   "%fence_ln162 = fence void @_ssdm_op_Fence, i1 %eKipadStrm, i1 %eMergeKipadLenStrm, i64 %lenStrm, i64 %mergeKipadLenStrm, i512 %kipadStrm, i32 4294967295, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:162]   --->   Operation 39 'fence' 'fence_ln162' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 40 [2/2] (1.58ns)   --->   "%call_ln160 = call void @mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_162_2, i512 %kipad, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:160]   --->   Operation 40 'call' 'call_ln160' <Predicate = true> <Delay = 1.58> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 4.95>
+ST_5 : Operation 41 [1/2] (4.95ns)   --->   "%call_ln160 = call void @mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_162_2, i512 %kipad, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:160]   --->   Operation 41 'call' 'call_ln160' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 7.26>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%fence_ln169 = fence void @_ssdm_op_Fence, i32 %mergeKipadStrm, i32 4294967295, i512 %kopadStrm, i512 %kopad2Strm, i32 %msgStrm, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169]   --->   Operation 42 'fence' 'fence_ln169' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] ( I:3.63ns O:3.63ns )   --->   "%kopadStrm_read = read i512 @_ssdm_op_Read.ap_fifo.volatile.i512P0A, i512 %kopadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169]   --->   Operation 43 'read' 'kopadStrm_read' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 4> <FIFO>
+ST_6 : Operation 44 [1/1] ( I:3.63ns O:3.63ns )   --->   "%write_ln169 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %kopad2Strm, i512 %kopadStrm_read" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169]   --->   Operation 44 'write' 'write_ln169' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 4> <FIFO>
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 45 [1/1] (0.00ns)   --->   "%fence_ln171 = fence void @_ssdm_op_Fence, i1 %eKipadStrm, i1 %eMergeKipadLenStrm, i64 %lenStrm, i64 %mergeKipadLenStrm, i512 %kipadStrm, i32 %mergeKipadStrm, i512 %kopadStrm, i512 %kopad2Strm, i32 4294967295, i32 %msgStrm, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 45 'fence' 'fence_ln171' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln171 = call void @mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_171_3, i63 %tmp_1, i32 %msgStrm, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 46 'call' 'call_ln171' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 8 <SV = 7> <Delay = 5.08>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln152 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152]   --->   Operation 47 'specloopname' 'specloopname_ln152' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/2] (5.08ns)   --->   "%call_ln171 = call void @mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_171_3, i63 %tmp_1, i32 %msgStrm, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171]   --->   Operation 48 'call' 'call_ln171' <Predicate = true> <Delay = 5.08> <CoreType = "Generic">   --->   Generic Core
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln152 = br void %while.cond" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152]   --->   Operation 49 'br' 'br_ln152' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 9.000ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 7.268ns
+The critical path consists of the following:
+	fifo read operation ('eKipadStrm_read', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152) on port 'eKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:152) [28]  (3.634 ns)
+	fifo write operation ('write_ln176', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:176) on port 'eMergeKipadLenStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:176) [50]  (3.634 ns)
+
+ <State 3>: 7.154ns
+The critical path consists of the following:
+	'add' operation 64 bit ('mergeKipadLen', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:156) [34]  (3.520 ns)
+	fifo write operation ('write_ln158', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:158) on port 'mergeKipadLenStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:158) [35]  (3.634 ns)
+
+ <State 4>: 1.588ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln160', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:160) to 'mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_162_2' [38]  (1.588 ns)
+
+ <State 5>: 4.956ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln160', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:160) to 'mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_162_2' [38]  (4.956 ns)
+
+ <State 6>: 7.268ns
+The critical path consists of the following:
+	fifo read operation ('kopadStrm_read', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169) on port 'kopadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169) [40]  (3.634 ns)
+	fifo write operation ('write_ln169', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169) on port 'kopad2Strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:169) [41]  (3.634 ns)
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 5.082ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln171', /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:171) to 'mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_171_3' [47]  (5.082 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

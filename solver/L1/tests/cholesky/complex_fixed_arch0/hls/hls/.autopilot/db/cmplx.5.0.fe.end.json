@@ -1,0 +1,84 @@
+{
+    "1": {
+        "name": "kernel_cholesky_0_Pipeline_read_matrix_rows_read_matrix_cols",
+        "file": "..\/kernel\/kernel_cholesky_0.cpp",
+        "fileloc": "26",
+        "instructions": "40",
+        "total_instructions": "40",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "kernel_cholesky_0_Pipeline_write_matrix_rows_write_matrix_cols",
+        "file": "..\/kernel\/kernel_cholesky_0.cpp",
+        "fileloc": "26",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "choleskyAlt<false,3,choleskyTraits,x_complex,x_complex<ap_fixed >>_Pipeline_sum_",
+        "file": "\/home\/yxh\/fpga-amd2025\/solver\/L1\/include\/hw\/cholesky.hpp",
+        "fileloc": "454",
+        "instructions": "125",
+        "total_instructions": "125",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "kernel_cholesky_0",
+        "file": "kernel_cholesky_0.cpp",
+        "fileloc": "24",
+        "instructions": "14",
+        "total_instructions": "798",
+        "calls": "1 4 2",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "choleskyAlt<false,3,choleskyTraits,x_complex,x_complex<ap_fixed >>",
+        "file": "\/home\/yxh\/fpga-amd2025\/solver\/L1\/include\/hw\/cholesky.hpp",
+        "fileloc": "442",
+        "instructions": "580",
+        "total_instructions": "705",
+        "calls": "3",
+        "basicblocks": "17",
+        "loads": {
+            "L": "16"
+        },
+        "stores": {
+            "L": "18"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    }
+}

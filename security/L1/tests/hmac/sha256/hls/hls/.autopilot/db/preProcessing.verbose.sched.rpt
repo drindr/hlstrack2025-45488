@@ -1,0 +1,514 @@
+
+
+================================================================
+== Vitis HLS Report for 'preProcessing'
+================================================================
+* Date:           Sat Nov  1 16:09:41 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.00 ns|  7.360 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |           Loop Name           |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- LOOP_SHA256_GENENERATE_MAIN  |        ?|        ?|    8 ~ 42|          -|          -|     ?|        no|
+        +-------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 25
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 24 23 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 2 
+24 --> 25 
+25 --> 23 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.63>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%b_loc = alloca i64 1"   --->   Operation 26 'alloca' 'b_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%b_4_loc = alloca i64 1"   --->   Operation 27 'alloca' 'b_4_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%b_5_loc = alloca i64 1"   --->   Operation 28 'alloca' 'b_5_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%b_6_loc = alloca i64 1"   --->   Operation 29 'alloca' 'b_6_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%b_7_loc = alloca i64 1"   --->   Operation 30 'alloca' 'b_7_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%b_8_loc = alloca i64 1"   --->   Operation 31 'alloca' 'b_8_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%b_9_loc = alloca i64 1"   --->   Operation 32 'alloca' 'b_9_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%b_10_loc = alloca i64 1"   --->   Operation 33 'alloca' 'b_10_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%b_11_loc = alloca i64 1"   --->   Operation 34 'alloca' 'b_11_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%b_12_loc = alloca i64 1"   --->   Operation 35 'alloca' 'b_12_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%b_13_loc = alloca i64 1"   --->   Operation 36 'alloca' 'b_13_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%b_14_loc = alloca i64 1"   --->   Operation 37 'alloca' 'b_14_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%b_15_loc = alloca i64 1"   --->   Operation 38 'alloca' 'b_15_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%b_16_loc = alloca i64 1"   --->   Operation 39 'alloca' 'b_16_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %end_nblk_strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 40 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %nblk_strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 41 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i512 %blk_strm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 42 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %eMergeKipadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 43 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mergeKipadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 44 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mergeKipadStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 45 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %end_nblk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %nblk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 47 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %blk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %eMergeKipadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mergeKipadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 50 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mergeKipadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] ( I:3.63ns O:3.63ns )   --->   "%end_flag = read i1 @_ssdm_op_Read.ap_fifo.volatile.i1P0A, i1 %eMergeKipadLenStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 52 'read' 'end_flag' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_1 : Operation 53 [1/1] (1.58ns)   --->   "%br_ln89 = br void %for.cond" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 53 'br' 'br_ln89' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 5.45>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%end_flag_1 = phi i1 %end_flag, void %entry, i1 %end_flag_2, void %for.inc390"   --->   Operation 54 'phi' 'end_flag_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln89 = br i1 %end_flag_1, void %LOOP_SHA256_GEN_FULL_BLKS, void %for.end392" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 55 'br' 'br_ln89' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] ( I:3.63ns O:3.63ns )   --->   "%len = read i64 @_ssdm_op_Read.ap_fifo.volatile.i64P0A, i64 %mergeKipadLenStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 56 'read' 'len' <Predicate = (!end_flag_1)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 4> <FIFO>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln91 = trunc i64 %len" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 57 'trunc' 'trunc_ln91' <Predicate = (!end_flag_1)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%left = trunc i64 %len" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 58 'trunc' 'left' <Predicate = (!end_flag_1)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln264 = trunc i64 %len" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:264]   --->   Operation 59 'trunc' 'trunc_ln264' <Predicate = (!end_flag_1)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %len, i32 6, i32 63" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 60 'partselect' 'trunc_ln' <Predicate = (!end_flag_1)> <Delay = 0.00>
+ST_2 : Operation 61 [1/1] (1.82ns)   --->   "%icmp_ln95 = icmp_ugt  i6 %left, i6 55" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 61 'icmp' 'icmp_ln95' <Predicate = (!end_flag_1)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 62 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln272 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %end_nblk_strm, i1 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:272]   --->   Operation 62 'write' 'write_ln272' <Predicate = (end_flag_1)> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%ret_ln274 = ret" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:274]   --->   Operation 63 'ret' 'ret_ln274' <Predicate = (end_flag_1)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 7.09>
+ST_3 : Operation 64 [1/1] (0.00ns) (grouped into LUT with out node blk_num)   --->   "%zext_ln95_1 = zext i58 %trunc_ln" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 64 'zext' 'zext_ln95_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 65 [1/1] (0.00ns) (grouped into LUT with out node blk_num)   --->   "%select_ln95 = select i1 %icmp_ln95, i59 2, i59 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 65 'select' 'select_ln95' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (3.36ns) (out node of the LUT)   --->   "%blk_num = add i59 %select_ln95, i59 %zext_ln95_1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 66 'add' 'blk_num' <Predicate = true> <Delay = 3.36> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.36> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%zext_ln95 = zext i59 %blk_num" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 67 'zext' 'zext_ln95' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln97 = write void @_ssdm_op_Write.ap_fifo.volatile.i64P0A, i64 %nblk_strm, i64 %zext_ln95" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:97]   --->   Operation 68 'write' 'write_ln97' <Predicate = true> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32> <FIFO>
+ST_3 : Operation 69 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln98 = write void @_ssdm_op_Write.ap_fifo.volatile.i1P0A, i1 %end_nblk_strm, i1 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:98]   --->   Operation 69 'write' 'write_ln98' <Predicate = true> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 70 [1/1] (0.00ns)   --->   "%fence_ln101 = fence void @_ssdm_op_Fence, i64 %mergeKipadLenStrm, i64 %nblk_strm, i1 %end_nblk_strm, i32 4294967295, i32 %mergeKipadStrm, i512 %blk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:101]   --->   Operation 70 'fence' 'fence_ln101' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 71 [2/2] (0.00ns)   --->   "%call_ln95 = call void @preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, i58 %trunc_ln, i32 %mergeKipadStrm, i512 %blk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 71 'call' 'call_ln95' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 4.95>
+ST_5 : Operation 72 [1/2] (4.95ns)   --->   "%call_ln95 = call void @preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS, i58 %trunc_ln, i32 %mergeKipadStrm, i512 %blk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95]   --->   Operation 72 'call' 'call_ln95' <Predicate = true> <Delay = 4.95> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 5.55>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "%specloopname_ln89 = specloopname void @_ssdm_op_SpecLoopName, void @empty_7" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 73 'specloopname' 'specloopname_ln89' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%fence_ln125 = fence void @_ssdm_op_Fence, i32 %mergeKipadStrm, i512 %blk_strm, i32 4294967295, i512 %blk_strm, i32 %mergeKipadStrm, i1 %eMergeKipadLenStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:125]   --->   Operation 74 'fence' 'fence_ln125' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 75 [1/1] (1.82ns)   --->   "%icmp_ln129 = icmp_eq  i6 %left, i6 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:129]   --->   Operation 75 'icmp' 'icmp_ln129' <Predicate = true> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%br_ln129 = br i1 %icmp_ln129, void %if.else, void %LOOP_SHA256_GEN_PAD_13_ZEROS" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:129]   --->   Operation 76 'br' 'br_ln129' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (1.82ns)   --->   "%icmp_ln152 = icmp_ult  i6 %left, i6 56" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:152]   --->   Operation 77 'icmp' 'icmp_ln152' <Predicate = (!icmp_ln129)> <Delay = 1.82> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 78 [1/1] (0.00ns)   --->   "%p_cast = partselect i4 @_ssdm_op_PartSelect.i4.i64.i32.i32, i64 %len, i32 2, i32 5" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 78 'partselect' 'p_cast' <Predicate = (!icmp_ln129)> <Delay = 0.00>
+ST_6 : Operation 79 [1/1] (0.00ns)   --->   "%br_ln152 = br i1 %icmp_ln152, void %LOOP_SHA256_GEN_COPY_TAIL_ONLY, void %for.body87.preheader" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:152]   --->   Operation 79 'br' 'br_ln152' <Predicate = (!icmp_ln129)> <Delay = 0.00>
+ST_6 : Operation 80 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 80 'read' 'l' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_6 : Operation 81 [1/1] (0.00ns)   --->   "%empty = trunc i32 %l" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 81 'trunc' 'empty' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_6 : Operation 82 [1/1] (0.00ns)   --->   "%p_s = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 82 'partselect' 'p_s' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_6 : Operation 83 [1/1] (0.00ns)   --->   "%p_68 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 83 'partselect' 'p_68' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_6 : Operation 84 [1/1] (0.00ns)   --->   "%p_69 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 84 'partselect' 'p_69' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_6 : Operation 85 [1/1] (0.00ns)   --->   "%fence_ln160 = fence void @_ssdm_op_Fence, i64 %mergeKipadLenStrm, i64 %nblk_strm, i1 %end_nblk_strm, i32 %mergeKipadStrm, i512 %blk_strm, i32 4294967295, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:160]   --->   Operation 85 'fence' 'fence_ln160' <Predicate = (!icmp_ln129 & icmp_ln152)> <Delay = 0.00>
+ST_6 : Operation 86 [2/2] (1.73ns)   --->   "%call_ln91 = call void @preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE, i32 %mergeKipadStrm, i4 %p_cast, i2 %trunc_ln91, i32 %b_16_loc, i32 %b_15_loc, i32 %b_14_loc, i32 %b_13_loc, i32 %b_12_loc, i32 %b_11_loc, i32 %b_10_loc, i32 %b_9_loc, i32 %b_8_loc, i32 %b_7_loc, i32 %b_6_loc, i32 %b_5_loc, i32 %b_4_loc, i32 %b_loc" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 86 'call' 'call_ln91' <Predicate = (!icmp_ln129 & icmp_ln152)> <Delay = 1.73> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "%tmp_3 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %len, i32 29, i32 60" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:151]   --->   Operation 87 'partselect' 'tmp_3' <Predicate = (icmp_ln129)> <Delay = 0.00>
+ST_6 : Operation 88 [1/1] (0.00ns)   --->   "%or_ln151_1 = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i29.i3.i32.i448, i29 %trunc_ln264, i3 0, i32 %tmp_3, i448 2147483648" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:151]   --->   Operation 88 'bitconcatenate' 'or_ln151_1' <Predicate = (icmp_ln129)> <Delay = 0.00>
+ST_6 : Operation 89 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln151 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %blk_strm, i512 %or_ln151_1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:151]   --->   Operation 89 'write' 'write_ln151' <Predicate = (icmp_ln129)> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 32> <FIFO>
+ST_6 : Operation 90 [1/1] (0.00ns)   --->   "%br_ln152 = br void %for.inc390" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:152]   --->   Operation 90 'br' 'br_ln152' <Predicate = (icmp_ln129)> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 3.63>
+ST_7 : Operation 91 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_28 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 91 'read' 'l_28' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_7 : Operation 92 [1/1] (0.00ns)   --->   "%empty_64 = trunc i32 %l_28" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 92 'trunc' 'empty_64' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 93 [1/1] (0.00ns)   --->   "%p_70 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_28, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 93 'partselect' 'p_70' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 94 [1/1] (0.00ns)   --->   "%p_71 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_28, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 94 'partselect' 'p_71' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 95 [1/1] (0.00ns)   --->   "%p_72 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_28, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 95 'partselect' 'p_72' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 3.63>
+ST_8 : Operation 96 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_29 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 96 'read' 'l_29' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_8 : Operation 97 [1/1] (0.00ns)   --->   "%empty_65 = trunc i32 %l_29" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 97 'trunc' 'empty_65' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 98 [1/1] (0.00ns)   --->   "%p_73 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_29, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 98 'partselect' 'p_73' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 99 [1/1] (0.00ns)   --->   "%p_74 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_29, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 99 'partselect' 'p_74' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 100 [1/1] (0.00ns)   --->   "%p_75 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_29, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 100 'partselect' 'p_75' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 3.63>
+ST_9 : Operation 101 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_30 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 101 'read' 'l_30' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_9 : Operation 102 [1/1] (0.00ns)   --->   "%empty_66 = trunc i32 %l_30" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 102 'trunc' 'empty_66' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 103 [1/1] (0.00ns)   --->   "%p_76 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_30, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 103 'partselect' 'p_76' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 104 [1/1] (0.00ns)   --->   "%p_77 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_30, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 104 'partselect' 'p_77' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 105 [1/1] (0.00ns)   --->   "%p_78 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_30, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 105 'partselect' 'p_78' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 3.63>
+ST_10 : Operation 106 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_31 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 106 'read' 'l_31' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%empty_67 = trunc i32 %l_31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 107 'trunc' 'empty_67' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 108 [1/1] (0.00ns)   --->   "%p_79 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_31, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 108 'partselect' 'p_79' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 109 [1/1] (0.00ns)   --->   "%p_80 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_31, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 109 'partselect' 'p_80' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 110 [1/1] (0.00ns)   --->   "%p_81 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_31, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 110 'partselect' 'p_81' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 3.63>
+ST_11 : Operation 111 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_32 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 111 'read' 'l_32' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_11 : Operation 112 [1/1] (0.00ns)   --->   "%empty_68 = trunc i32 %l_32" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 112 'trunc' 'empty_68' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 113 [1/1] (0.00ns)   --->   "%p_82 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_32, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 113 'partselect' 'p_82' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%p_83 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_32, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 114 'partselect' 'p_83' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 115 [1/1] (0.00ns)   --->   "%p_84 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_32, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 115 'partselect' 'p_84' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 11> <Delay = 3.63>
+ST_12 : Operation 116 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_33 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 116 'read' 'l_33' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_12 : Operation 117 [1/1] (0.00ns)   --->   "%empty_69 = trunc i32 %l_33" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 117 'trunc' 'empty_69' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 118 [1/1] (0.00ns)   --->   "%p_85 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_33, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 118 'partselect' 'p_85' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 119 [1/1] (0.00ns)   --->   "%p_86 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_33, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 119 'partselect' 'p_86' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "%p_87 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_33, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 120 'partselect' 'p_87' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 3.63>
+ST_13 : Operation 121 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_34 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 121 'read' 'l_34' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_13 : Operation 122 [1/1] (0.00ns)   --->   "%empty_70 = trunc i32 %l_34" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 122 'trunc' 'empty_70' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 123 [1/1] (0.00ns)   --->   "%p_88 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_34, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 123 'partselect' 'p_88' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 124 [1/1] (0.00ns)   --->   "%p_89 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_34, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 124 'partselect' 'p_89' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 125 [1/1] (0.00ns)   --->   "%p_90 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_34, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 125 'partselect' 'p_90' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 3.63>
+ST_14 : Operation 126 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_35 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 126 'read' 'l_35' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_14 : Operation 127 [1/1] (0.00ns)   --->   "%empty_71 = trunc i32 %l_35" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 127 'trunc' 'empty_71' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 128 [1/1] (0.00ns)   --->   "%p_91 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_35, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 128 'partselect' 'p_91' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 129 [1/1] (0.00ns)   --->   "%p_92 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_35, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 129 'partselect' 'p_92' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 130 [1/1] (0.00ns)   --->   "%p_93 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_35, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 130 'partselect' 'p_93' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 3.63>
+ST_15 : Operation 131 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_36 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 131 'read' 'l_36' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_15 : Operation 132 [1/1] (0.00ns)   --->   "%empty_72 = trunc i32 %l_36" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 132 'trunc' 'empty_72' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 133 [1/1] (0.00ns)   --->   "%p_94 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_36, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 133 'partselect' 'p_94' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 134 [1/1] (0.00ns)   --->   "%p_95 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_36, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 134 'partselect' 'p_95' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 135 [1/1] (0.00ns)   --->   "%p_96 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_36, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 135 'partselect' 'p_96' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 15> <Delay = 3.63>
+ST_16 : Operation 136 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_37 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 136 'read' 'l_37' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_16 : Operation 137 [1/1] (0.00ns)   --->   "%empty_73 = trunc i32 %l_37" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 137 'trunc' 'empty_73' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 138 [1/1] (0.00ns)   --->   "%p_97 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_37, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 138 'partselect' 'p_97' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 139 [1/1] (0.00ns)   --->   "%p_98 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_37, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 139 'partselect' 'p_98' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 140 [1/1] (0.00ns)   --->   "%p_99 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_37, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 140 'partselect' 'p_99' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 16> <Delay = 3.63>
+ST_17 : Operation 141 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_39 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 141 'read' 'l_39' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_17 : Operation 142 [1/1] (0.00ns)   --->   "%empty_74 = trunc i32 %l_39" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 142 'trunc' 'empty_74' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 143 [1/1] (0.00ns)   --->   "%p_100 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_39, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 143 'partselect' 'p_100' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 144 [1/1] (0.00ns)   --->   "%p_101 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_39, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 144 'partselect' 'p_101' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 145 [1/1] (0.00ns)   --->   "%p_102 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_39, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 145 'partselect' 'p_102' <Predicate = true> <Delay = 0.00>
+
+State 18 <SV = 17> <Delay = 3.63>
+ST_18 : Operation 146 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_40 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 146 'read' 'l_40' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_18 : Operation 147 [1/1] (0.00ns)   --->   "%empty_75 = trunc i32 %l_40" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 147 'trunc' 'empty_75' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 148 [1/1] (0.00ns)   --->   "%p_103 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_40, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 148 'partselect' 'p_103' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 149 [1/1] (0.00ns)   --->   "%p_104 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_40, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 149 'partselect' 'p_104' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 150 [1/1] (0.00ns)   --->   "%p_105 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_40, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 150 'partselect' 'p_105' <Predicate = true> <Delay = 0.00>
+
+State 19 <SV = 18> <Delay = 3.63>
+ST_19 : Operation 151 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_41 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 151 'read' 'l_41' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_19 : Operation 152 [1/1] (0.00ns)   --->   "%empty_76 = trunc i32 %l_41" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 152 'trunc' 'empty_76' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 153 [1/1] (0.00ns)   --->   "%p_106 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_41, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 153 'partselect' 'p_106' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 154 [1/1] (0.00ns)   --->   "%p_107 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_41, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 154 'partselect' 'p_107' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 155 [1/1] (0.00ns)   --->   "%p_108 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_41, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 155 'partselect' 'p_108' <Predicate = true> <Delay = 0.00>
+
+State 20 <SV = 19> <Delay = 5.36>
+ST_20 : Operation 156 [1/1] (1.56ns)   --->   "%cmp275 = icmp_eq  i2 %trunc_ln91, i2 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 156 'icmp' 'cmp275' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 157 [1/1] (1.56ns)   --->   "%cmp281 = icmp_eq  i2 %trunc_ln91, i2 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 157 'icmp' 'cmp281' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 158 [1/1] (1.56ns)   --->   "%cmp298 = icmp_eq  i2 %trunc_ln91, i2 2" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 158 'icmp' 'cmp298' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 159 [1/1] (1.73ns)   --->   "%icmp_ln215 = icmp_eq  i4 %p_cast, i4 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:215]   --->   Operation 159 'icmp' 'icmp_ln215' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 160 [1/1] (0.00ns)   --->   "%br_ln215 = br i1 %icmp_ln215, void %if.else262.14, void %do.end261.14" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:215]   --->   Operation 160 'br' 'br_ln215' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 161 [1/1] (1.94ns)   --->   "%br_ln223 = br i1 %cmp275, void %if.else280.14, void %if.else262.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 161 'br' 'br_ln223' <Predicate = (!icmp_ln215)> <Delay = 1.94>
+ST_20 : Operation 162 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_44 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:232]   --->   Operation 162 'read' 'l_44' <Predicate = (!icmp_ln215 & !cmp275)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_20 : Operation 163 [1/1] (0.00ns)   --->   "%br_ln231 = br i1 %cmp281, void %if.else297.14, void %if.then282.14" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:231]   --->   Operation 163 'br' 'br_ln231' <Predicate = (!icmp_ln215 & !cmp275)> <Delay = 0.00>
+ST_20 : Operation 164 [1/1] (0.00ns)   --->   "%tmp_4 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_44, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:239]   --->   Operation 164 'partselect' 'tmp_4' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281)> <Delay = 0.00>
+ST_20 : Operation 165 [1/1] (0.00ns)   --->   "%br_ln236 = br i1 %cmp298, void %if.else318.14, void %if.then299.14" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:236]   --->   Operation 165 'br' 'br_ln236' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281)> <Delay = 0.00>
+ST_20 : Operation 166 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_44, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:244]   --->   Operation 166 'partselect' 'tmp_5' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & !cmp298)> <Delay = 0.00>
+ST_20 : Operation 167 [1/1] (0.00ns)   --->   "%trunc_ln245 = trunc i32 %l_44" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:245]   --->   Operation 167 'trunc' 'trunc_ln245' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & !cmp298)> <Delay = 0.00>
+ST_20 : Operation 168 [1/1] (0.00ns)   --->   "%or_ln4 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i8.i8, i8 %trunc_ln245, i8 %tmp_4, i8 %tmp_5, i8 128" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:245]   --->   Operation 168 'bitconcatenate' 'or_ln4' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & !cmp298)> <Delay = 0.00>
+ST_20 : Operation 169 [1/1] (1.94ns)   --->   "%br_ln0 = br void %if.else262.15"   --->   Operation 169 'br' 'br_ln0' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & !cmp298)> <Delay = 1.94>
+ST_20 : Operation 170 [1/1] (0.00ns)   --->   "%trunc_ln240 = trunc i32 %l_44" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:240]   --->   Operation 170 'trunc' 'trunc_ln240' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & cmp298)> <Delay = 0.00>
+ST_20 : Operation 171 [1/1] (0.00ns)   --->   "%or_ln3 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i16, i8 %trunc_ln240, i8 %tmp_4, i16 32768" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:240]   --->   Operation 171 'bitconcatenate' 'or_ln3' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & cmp298)> <Delay = 0.00>
+ST_20 : Operation 172 [1/1] (1.94ns)   --->   "%br_ln241 = br void %if.else262.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:241]   --->   Operation 172 'br' 'br_ln241' <Predicate = (!icmp_ln215 & !cmp275 & !cmp281 & cmp298)> <Delay = 1.94>
+ST_20 : Operation 173 [1/1] (0.00ns)   --->   "%trunc_ln234 = trunc i32 %l_44" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:234]   --->   Operation 173 'trunc' 'trunc_ln234' <Predicate = (!icmp_ln215 & !cmp275 & cmp281)> <Delay = 0.00>
+ST_20 : Operation 174 [1/1] (0.00ns)   --->   "%or_ln = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i24, i8 %trunc_ln234, i24 8388608" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:235]   --->   Operation 174 'bitconcatenate' 'or_ln' <Predicate = (!icmp_ln215 & !cmp275 & cmp281)> <Delay = 0.00>
+ST_20 : Operation 175 [1/1] (1.94ns)   --->   "%br_ln236 = br void %if.else262.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:236]   --->   Operation 175 'br' 'br_ln236' <Predicate = (!icmp_ln215 & !cmp275 & cmp281)> <Delay = 1.94>
+ST_20 : Operation 176 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_42 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 176 'read' 'l_42' <Predicate = (icmp_ln215)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_20 : Operation 177 [1/1] (0.00ns)   --->   "%empty_77 = trunc i32 %l_42" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 177 'trunc' 'empty_77' <Predicate = (icmp_ln215)> <Delay = 0.00>
+ST_20 : Operation 178 [1/1] (0.00ns)   --->   "%p_109 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_42, i32 24, i32 31" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 178 'partselect' 'p_109' <Predicate = (icmp_ln215)> <Delay = 0.00>
+ST_20 : Operation 179 [1/1] (0.00ns)   --->   "%p_110 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_42, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 179 'partselect' 'p_110' <Predicate = (icmp_ln215)> <Delay = 0.00>
+ST_20 : Operation 180 [1/1] (0.00ns)   --->   "%p_111 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_42, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 180 'partselect' 'p_111' <Predicate = (icmp_ln215)> <Delay = 0.00>
+ST_20 : Operation 181 [1/1] (0.00ns)   --->   "%l_43 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i8.i8, i8 %empty_77, i8 %p_110, i8 %p_111, i8 %p_109" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217]   --->   Operation 181 'bitconcatenate' 'l_43' <Predicate = (icmp_ln215)> <Delay = 0.00>
+ST_20 : Operation 182 [1/1] (1.94ns)   --->   "%br_ln223 = br void %if.else262.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 182 'br' 'br_ln223' <Predicate = (icmp_ln215)> <Delay = 1.94>
+ST_20 : Operation 183 [1/1] (1.73ns)   --->   "%icmp_ln223 = icmp_ne  i4 %p_cast, i4 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 183 'icmp' 'icmp_ln223' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 4.61>
+ST_21 : Operation 184 [1/1] (0.00ns)   --->   "%b225_0_14_load = phi i32 %l_43, void %do.end261.14, i32 %or_ln, void %if.then282.14, i32 %or_ln4, void %if.else318.14, i32 %or_ln3, void %if.then299.14, i32 2147483648, void %if.else262.14"   --->   Operation 184 'phi' 'b225_0_14_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 185 [1/1] (0.97ns)   --->   "%or_ln223 = or i1 %icmp_ln223, i1 %cmp275" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 185 'or' 'or_ln223' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 186 [1/1] (0.69ns)   --->   "%select_ln223 = select i1 %icmp_ln223, i32 0, i32 2147483648" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 186 'select' 'select_ln223' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_21 : Operation 187 [1/1] (1.82ns)   --->   "%br_ln223 = br i1 %or_ln223, void %if.else280.15, void %for.inc349.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223]   --->   Operation 187 'br' 'br_ln223' <Predicate = true> <Delay = 1.82>
+ST_21 : Operation 188 [1/1] ( I:3.63ns O:3.63ns )   --->   "%l_45 = read i32 @_ssdm_op_Read.ap_fifo.volatile.i32P0A, i32 %mergeKipadStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:232]   --->   Operation 188 'read' 'l_45' <Predicate = (!or_ln223)> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_21 : Operation 189 [1/1] (0.00ns)   --->   "%br_ln231 = br i1 %cmp281, void %if.else297.15, void %if.then282.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:231]   --->   Operation 189 'br' 'br_ln231' <Predicate = (!or_ln223)> <Delay = 0.00>
+ST_21 : Operation 190 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_45, i32 8, i32 15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:239]   --->   Operation 190 'partselect' 'tmp_6' <Predicate = (!cmp281 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 191 [1/1] (0.00ns)   --->   "%br_ln236 = br i1 %cmp298, void %if.else318.15, void %if.then299.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:236]   --->   Operation 191 'br' 'br_ln236' <Predicate = (!cmp281 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 192 [1/1] (0.00ns)   --->   "%tmp_8 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %l_45, i32 16, i32 23" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:244]   --->   Operation 192 'partselect' 'tmp_8' <Predicate = (!cmp281 & !cmp298 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 193 [1/1] (0.00ns)   --->   "%trunc_ln245_1 = trunc i32 %l_45" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:245]   --->   Operation 193 'trunc' 'trunc_ln245_1' <Predicate = (!cmp281 & !cmp298 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 194 [1/1] (0.00ns)   --->   "%or_ln245_2 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i8.i8, i8 %trunc_ln245_1, i8 %tmp_6, i8 %tmp_8, i8 128" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:245]   --->   Operation 194 'bitconcatenate' 'or_ln245_2' <Predicate = (!cmp281 & !cmp298 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 195 [1/1] (1.82ns)   --->   "%br_ln0 = br void %for.inc349.15"   --->   Operation 195 'br' 'br_ln0' <Predicate = (!cmp281 & !cmp298 & !or_ln223)> <Delay = 1.82>
+ST_21 : Operation 196 [1/1] (0.00ns)   --->   "%trunc_ln240_1 = trunc i32 %l_45" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:240]   --->   Operation 196 'trunc' 'trunc_ln240_1' <Predicate = (!cmp281 & cmp298 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 197 [1/1] (0.00ns)   --->   "%or_ln240_1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i8.i16, i8 %trunc_ln240_1, i8 %tmp_6, i16 32768" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:240]   --->   Operation 197 'bitconcatenate' 'or_ln240_1' <Predicate = (!cmp281 & cmp298 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 198 [1/1] (1.82ns)   --->   "%br_ln241 = br void %for.inc349.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:241]   --->   Operation 198 'br' 'br_ln241' <Predicate = (!cmp281 & cmp298 & !or_ln223)> <Delay = 1.82>
+ST_21 : Operation 199 [1/1] (0.00ns)   --->   "%trunc_ln234_1 = trunc i32 %l_45" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:234]   --->   Operation 199 'trunc' 'trunc_ln234_1' <Predicate = (cmp281 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 200 [1/1] (0.00ns)   --->   "%or_ln235_1 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i8.i24, i8 %trunc_ln234_1, i24 8388608" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:235]   --->   Operation 200 'bitconcatenate' 'or_ln235_1' <Predicate = (cmp281 & !or_ln223)> <Delay = 0.00>
+ST_21 : Operation 201 [1/1] (1.82ns)   --->   "%br_ln236 = br void %for.inc349.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:236]   --->   Operation 201 'br' 'br_ln236' <Predicate = (cmp281 & !or_ln223)> <Delay = 1.82>
+ST_21 : Operation 202 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %len, i32 29, i32 60" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:268]   --->   Operation 202 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+
+State 22 <SV = 21> <Delay = 3.72>
+ST_22 : Operation 203 [1/1] (0.00ns)   --->   "%storemerge93 = phi i32 %or_ln235_1, void %if.then282.15, i32 %or_ln245_2, void %if.else318.15, i32 %or_ln240_1, void %if.then299.15, i32 %select_ln223, void %if.else262.15" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:235]   --->   Operation 203 'phi' 'storemerge93' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 204 [1/1] (0.00ns)   --->   "%or_ln250_s = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i32.i32.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8.i8, i32 %storemerge93, i32 %b225_0_14_load, i8 %empty_76, i8 %p_107, i8 %p_108, i8 %p_106, i8 %empty_75, i8 %p_104, i8 %p_105, i8 %p_103, i8 %empty_74, i8 %p_101, i8 %p_102, i8 %p_100, i8 %empty_73, i8 %p_98, i8 %p_99, i8 %p_97, i8 %empty_72, i8 %p_95, i8 %p_96, i8 %p_94, i8 %empty_71, i8 %p_92, i8 %p_93, i8 %p_91, i8 %empty_70, i8 %p_89, i8 %p_90, i8 %p_88, i8 %empty_69, i8 %p_86, i8 %p_87, i8 %p_85, i8 %empty_68, i8 %p_83, i8 %p_84, i8 %p_82, i8 %empty_67, i8 %p_80, i8 %p_81, i8 %p_79, i8 %empty_66, i8 %p_77, i8 %p_78, i8 %p_76, i8 %empty_65, i8 %p_74, i8 %p_75, i8 %p_73, i8 %empty_64, i8 %p_71, i8 %p_72, i8 %p_70, i8 %empty, i8 %p_68, i8 %p_69, i8 %p_s" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:250]   --->   Operation 204 'bitconcatenate' 'or_ln250_s' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 205 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln250 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %blk_strm, i512 %or_ln250_s" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:250]   --->   Operation 205 'write' 'write_ln250' <Predicate = true> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 32> <FIFO>
+
+State 23 <SV = 22> <Delay = 3.72>
+ST_23 : Operation 206 [1/1] (0.00ns)   --->   "%or_ln268_s = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i29.i3.i32.i448, i29 %trunc_ln264, i3 0, i32 %tmp_7, i448 0" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:268]   --->   Operation 206 'bitconcatenate' 'or_ln268_s' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_23 : Operation 207 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln268 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %blk_strm, i512 %or_ln268_s" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:268]   --->   Operation 207 'write' 'write_ln268' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 32> <FIFO>
+ST_23 : Operation 208 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end388"   --->   Operation 208 'br' 'br_ln0' <Predicate = (!icmp_ln129 & !icmp_ln152)> <Delay = 0.00>
+ST_23 : Operation 209 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc390"   --->   Operation 209 'br' 'br_ln0' <Predicate = (!icmp_ln129)> <Delay = 0.00>
+ST_23 : Operation 210 [1/1] ( I:3.63ns O:3.63ns )   --->   "%end_flag_2 = read i1 @_ssdm_op_Read.ap_fifo.volatile.i1P0A, i1 %eMergeKipadLenStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 210 'read' 'end_flag_2' <Predicate = true> <Delay = 3.63> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 4> <FIFO>
+ST_23 : Operation 211 [1/1] (0.00ns)   --->   "%br_ln89 = br void %for.cond" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89]   --->   Operation 211 'br' 'br_ln89' <Predicate = true> <Delay = 0.00>
+
+State 24 <SV = 6> <Delay = 4.91>
+ST_24 : Operation 212 [1/2] (4.91ns)   --->   "%call_ln91 = call void @preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE, i32 %mergeKipadStrm, i4 %p_cast, i2 %trunc_ln91, i32 %b_16_loc, i32 %b_15_loc, i32 %b_14_loc, i32 %b_13_loc, i32 %b_12_loc, i32 %b_11_loc, i32 %b_10_loc, i32 %b_9_loc, i32 %b_8_loc, i32 %b_7_loc, i32 %b_6_loc, i32 %b_5_loc, i32 %b_4_loc, i32 %b_loc" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91]   --->   Operation 212 'call' 'call_ln91' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+
+State 25 <SV = 7> <Delay = 3.72>
+ST_25 : Operation 213 [1/1] (0.00ns)   --->   "%fence_ln203 = fence void @_ssdm_op_Fence, i32 %mergeKipadStrm, i32 4294967295, i512 %blk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203]   --->   Operation 213 'fence' 'fence_ln203' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 214 [1/1] (0.00ns)   --->   "%b_16_loc_load = load i32 %b_16_loc"   --->   Operation 214 'load' 'b_16_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 215 [1/1] (0.00ns)   --->   "%b_15_loc_load = load i32 %b_15_loc"   --->   Operation 215 'load' 'b_15_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 216 [1/1] (0.00ns)   --->   "%b_14_loc_load = load i32 %b_14_loc"   --->   Operation 216 'load' 'b_14_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 217 [1/1] (0.00ns)   --->   "%b_13_loc_load = load i32 %b_13_loc"   --->   Operation 217 'load' 'b_13_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 218 [1/1] (0.00ns)   --->   "%b_12_loc_load = load i32 %b_12_loc"   --->   Operation 218 'load' 'b_12_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 219 [1/1] (0.00ns)   --->   "%b_11_loc_load = load i32 %b_11_loc"   --->   Operation 219 'load' 'b_11_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 220 [1/1] (0.00ns)   --->   "%b_10_loc_load = load i32 %b_10_loc"   --->   Operation 220 'load' 'b_10_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 221 [1/1] (0.00ns)   --->   "%b_9_loc_load = load i32 %b_9_loc"   --->   Operation 221 'load' 'b_9_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 222 [1/1] (0.00ns)   --->   "%b_8_loc_load = load i32 %b_8_loc"   --->   Operation 222 'load' 'b_8_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 223 [1/1] (0.00ns)   --->   "%b_7_loc_load = load i32 %b_7_loc"   --->   Operation 223 'load' 'b_7_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 224 [1/1] (0.00ns)   --->   "%b_6_loc_load = load i32 %b_6_loc"   --->   Operation 224 'load' 'b_6_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 225 [1/1] (0.00ns)   --->   "%b_5_loc_load = load i32 %b_5_loc"   --->   Operation 225 'load' 'b_5_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 226 [1/1] (0.00ns)   --->   "%b_4_loc_load = load i32 %b_4_loc"   --->   Operation 226 'load' 'b_4_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 227 [1/1] (0.00ns)   --->   "%b_loc_load = load i32 %b_loc"   --->   Operation 227 'load' 'b_loc_load' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 228 [1/1] (0.00ns)   --->   "%tmp_s = partselect i32 @_ssdm_op_PartSelect.i32.i64.i32.i32, i64 %len, i32 29, i32 60" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203]   --->   Operation 228 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 229 [1/1] (0.00ns)   --->   "%or_ln203_s = bitconcatenate i512 @_ssdm_op_BitConcatenate.i512.i29.i3.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32.i32, i29 %trunc_ln264, i3 0, i32 %tmp_s, i32 %b_16_loc_load, i32 %b_15_loc_load, i32 %b_14_loc_load, i32 %b_13_loc_load, i32 %b_12_loc_load, i32 %b_11_loc_load, i32 %b_10_loc_load, i32 %b_9_loc_load, i32 %b_8_loc_load, i32 %b_7_loc_load, i32 %b_6_loc_load, i32 %b_5_loc_load, i32 %b_4_loc_load, i32 %b_loc_load" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203]   --->   Operation 229 'bitconcatenate' 'or_ln203_s' <Predicate = true> <Delay = 0.00>
+ST_25 : Operation 230 [1/1] ( I:3.72ns O:3.72ns )   --->   "%write_ln203 = write void @_ssdm_op_Write.ap_fifo.volatile.i512P0A, i512 %blk_strm, i512 %or_ln203_s" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203]   --->   Operation 230 'write' 'write_ln203' <Predicate = true> <Delay = 3.72> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 32> <FIFO>
+ST_25 : Operation 231 [1/1] (0.00ns)   --->   "%br_ln205 = br void %if.end388" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:205]   --->   Operation 231 'br' 'br_ln205' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 9.000ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('end_flag', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89) on port 'eMergeKipadLenStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89) [33]  (3.634 ns)
+
+ <State 2>: 5.459ns
+The critical path consists of the following:
+	'phi' operation 1 bit ('end_flag') with incoming values : ('end_flag', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:89) [36]  (0.000 ns)
+	fifo read operation ('len', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91) on port 'mergeKipadLenStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91) [40]  (3.634 ns)
+	'icmp' operation 1 bit ('icmp_ln95', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95) [46]  (1.825 ns)
+
+ <State 3>: 7.091ns
+The critical path consists of the following:
+	'add' operation 59 bit ('blk_num', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95) [48]  (3.365 ns)
+	fifo write operation ('write_ln97', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:97) on port 'nblk_strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:97) [50]  (3.726 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 4.954ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln95', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:95) to 'preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS' [53]  (4.954 ns)
+
+ <State 6>: 5.551ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln129', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:129) [55]  (1.825 ns)
+	fifo write operation ('write_ln151', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:151) on port 'blk_strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:151) [226]  (3.726 ns)
+
+ <State 7>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [70]  (3.634 ns)
+
+ <State 8>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [75]  (3.634 ns)
+
+ <State 9>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [80]  (3.634 ns)
+
+ <State 10>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [85]  (3.634 ns)
+
+ <State 11>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [90]  (3.634 ns)
+
+ <State 12>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [95]  (3.634 ns)
+
+ <State 13>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [100]  (3.634 ns)
+
+ <State 14>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [105]  (3.634 ns)
+
+ <State 15>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [110]  (3.634 ns)
+
+ <State 16>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [115]  (3.634 ns)
+
+ <State 17>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [120]  (3.634 ns)
+
+ <State 18>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [125]  (3.634 ns)
+
+ <State 19>: 3.634ns
+The critical path consists of the following:
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [130]  (3.634 ns)
+
+ <State 20>: 5.369ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('icmp_ln215', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:215) [135]  (1.735 ns)
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:217) [159]  (3.634 ns)
+
+ <State 21>: 4.612ns
+The critical path consists of the following:
+	'or' operation 1 bit ('or_ln223', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223) [169]  (0.978 ns)
+	fifo read operation ('l', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:232) on port 'mergeKipadStrm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:232) [173]  (3.634 ns)
+
+ <State 22>: 3.726ns
+The critical path consists of the following:
+	'phi' operation 32 bit ('storemerge93', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:235) with incoming values : ('select_ln223', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:223) ('or_ln245_2', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:245) ('or_ln240_1', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:240) ('or_ln235_1', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:235) [192]  (0.000 ns)
+	fifo write operation ('write_ln250', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:250) on port 'blk_strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:250) [194]  (3.726 ns)
+
+ <State 23>: 3.726ns
+The critical path consists of the following:
+	fifo write operation ('write_ln268', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:268) on port 'blk_strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:268) [197]  (3.726 ns)
+
+ <State 24>: 4.911ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln91', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:91) to 'preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE' [201]  (4.911 ns)
+
+ <State 25>: 3.726ns
+The critical path consists of the following:
+	'load' operation 32 bit ('b_16_loc_load') on local variable 'b_16_loc' [203]  (0.000 ns)
+	fifo write operation ('write_ln203', /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203) on port 'blk_strm' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:203) [219]  (3.726 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

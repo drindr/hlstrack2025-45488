@@ -1,0 +1,283 @@
+{
+	"version": "1.0",
+	"modules": {
+		"test_hmac_sha256": {
+			"proto_instances": {
+				"/AESL_inst_test_hmac_sha256_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/kpad_32_64_256_32_64_sha256_wrapper_U0/grp_kpad_32_64_256_32_64_sha256_wrapper_Pipeline_VITIS_LOOP_120_2_fu_215/grp_kpad_32_64_256_32_64_sha256_wrapper_Pipeline_VITIS_LOOP_120_2_fu_215_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/kpad_32_64_256_32_64_sha256_wrapper_U0/kpad_32_64_256_32_64_sha256_wrapper_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/grp_sha256_top_32_256_s_fu_32_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/preProcessing_U0/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE_fu_280/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE_fu_280_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/preProcessing_U0/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS_fu_271/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS_fu_271_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/preProcessing_U0/preProcessing_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/sha256Digest_unroll2_256_U0/grp_sha256Digest_unroll2_256_Pipeline_VITIS_LOOP_636_10_fu_272/grp_sha256Digest_unroll2_256_Pipeline_VITIS_LOOP_636_10_fu_272_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/grp_sha256_top_32_256_s_fu_32/sha256Digest_unroll2_256_U0/sha256Digest_unroll2_256_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/hash_U0/hash_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/mergeKipad_32_64_256_64_U0/grp_mergeKipad_32_64_256_64_Pipeline_VITIS_LOOP_162_2_fu_126/grp_mergeKipad_32_64_256_64_Pipeline_VITIS_LOOP_162_2_fu_126_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/mergeKipad_32_64_256_64_U0/grp_mergeKipad_32_64_256_64_Pipeline_VITIS_LOOP_171_3_fu_133/grp_mergeKipad_32_64_256_64_Pipeline_VITIS_LOOP_171_3_fu_133_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/mergeKipad_32_64_256_64_U0/mergeKipad_32_64_256_64_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/msgHash_32_64_256_32_64_sha256_wrapper_U0/msgHash_32_64_256_32_64_sha256_wrapper_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/grp_sha256_top_32_256_s_fu_30_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/preProcessing_U0/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE_fu_280/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE_fu_280_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/preProcessing_U0/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS_fu_271/grp_preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS_fu_271_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/preProcessing_U0/preProcessing_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/sha256Digest_unroll2_256_U0/grp_sha256Digest_unroll2_256_Pipeline_VITIS_LOOP_636_10_fu_272/grp_sha256Digest_unroll2_256_Pipeline_VITIS_LOOP_636_10_fu_272_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/grp_sha256_top_32_256_s_fu_30/sha256Digest_unroll2_256_U0/sha256Digest_unroll2_256_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/hash_1_U0/hash_1_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/mergeKopad_32_64_256_32_64_U0/grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2_fu_91/grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2_fu_91_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/mergeKopad_32_64_256_32_64_U0/grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3_fu_98/grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3_fu_98_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/mergeKopad_32_64_256_32_64_U0/mergeKopad_32_64_256_32_64_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_hmacDataflow_32_64_256_32_64_sha256_wrapper_s_fu_38/resHash_32_64_256_32_64_sha256_wrapper_U0/resHash_32_64_256_32_64_sha256_wrapper_U0_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_CONTINUE": { "actual": "ap_continue"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

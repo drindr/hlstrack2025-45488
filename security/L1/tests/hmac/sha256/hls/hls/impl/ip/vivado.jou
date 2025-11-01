@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:34:34 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Nov  1 16:09:46 2025
+# Process ID         : 55671
+# Current directory  : /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/impl/ip
+# Command line       : vivado -notrace -mode batch -source run_ippack.tcl
+# Log file           : /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/impl/ip/vivado.log
+# Journal file       : /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/impl/ip/vivado.jou
+# Running On         : yxh-ASUS-TUF-Gaming-F15-FX507ZM-FX507ZM
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04.5 LTS
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 1484.479 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16364 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 18512 MB
+# Available Virtual  : 2045 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

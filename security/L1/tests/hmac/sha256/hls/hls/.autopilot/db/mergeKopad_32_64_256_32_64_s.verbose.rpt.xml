@@ -1,0 +1,165 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'mergeKopad_32_64_256_32_64_s'" level="0">
+<item name = "Date">Sat Nov  1 16:09:43 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">hls</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">9.00 ns, 7.268 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, ?, ?, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2_fu_91">mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2, 18, 18, 0.162 us, 0.162 us, 17, 17, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3_fu_98">mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3, 10, 10, 90.000 ns, 90.000 ns, 9, 9, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_213_1">?, ?, 33, -, -, ?, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 783, 169, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 137, -</column>
+<column name="Register">-, -, 778, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 1, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2_fu_91">mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2, 0, 0, 520, 85, 0</column>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3_fu_98">mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3, 0, 0, 263, 84, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">37, 7, 1, 7</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="eMergeKopadLenStrm_blk_n">9, 2, 1, 2</column>
+<column name="eMergeKopadLenStrm_din">14, 3, 1, 3</column>
+<column name="eMsgHashStrm_blk_n">9, 2, 1, 2</column>
+<column name="kopad2Strm_blk_n">9, 2, 1, 2</column>
+<column name="mergeKopadLenStrm_blk_n">9, 2, 1, 2</column>
+<column name="mergeKopadStrm_din">9, 2, 32, 64</column>
+<column name="mergeKopadStrm_write">14, 3, 1, 3</column>
+<column name="msgHashStrm_blk_n">9, 2, 1, 2</column>
+<column name="real_start">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_220_2_fu_91_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_mergeKopad_32_64_256_32_64_Pipeline_VITIS_LOOP_226_3_fu_98_ap_start_reg">1, 0, 1, 0</column>
+<column name="kopad_reg_146">512, 0, 512, 0</column>
+<column name="msgHash_reg_151">256, 0, 256, 0</column>
+<column name="start_once_reg">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="start_full_n">in, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="start_out">out, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="start_write">out, 1, ap_ctrl_hs, mergeKopad&lt;32, 64, 256, 32, 64&gt;, return value</column>
+<column name="kopad2Strm_dout">in, 512, ap_fifo, kopad2Strm, pointer</column>
+<column name="kopad2Strm_empty_n">in, 1, ap_fifo, kopad2Strm, pointer</column>
+<column name="kopad2Strm_read">out, 1, ap_fifo, kopad2Strm, pointer</column>
+<column name="kopad2Strm_num_data_valid">in, 3, ap_fifo, kopad2Strm, pointer</column>
+<column name="kopad2Strm_fifo_cap">in, 3, ap_fifo, kopad2Strm, pointer</column>
+<column name="msgHashStrm_dout">in, 256, ap_fifo, msgHashStrm, pointer</column>
+<column name="msgHashStrm_empty_n">in, 1, ap_fifo, msgHashStrm, pointer</column>
+<column name="msgHashStrm_read">out, 1, ap_fifo, msgHashStrm, pointer</column>
+<column name="msgHashStrm_num_data_valid">in, 3, ap_fifo, msgHashStrm, pointer</column>
+<column name="msgHashStrm_fifo_cap">in, 3, ap_fifo, msgHashStrm, pointer</column>
+<column name="eMsgHashStrm_dout">in, 1, ap_fifo, eMsgHashStrm, pointer</column>
+<column name="eMsgHashStrm_empty_n">in, 1, ap_fifo, eMsgHashStrm, pointer</column>
+<column name="eMsgHashStrm_read">out, 1, ap_fifo, eMsgHashStrm, pointer</column>
+<column name="eMsgHashStrm_num_data_valid">in, 3, ap_fifo, eMsgHashStrm, pointer</column>
+<column name="eMsgHashStrm_fifo_cap">in, 3, ap_fifo, eMsgHashStrm, pointer</column>
+<column name="mergeKopadStrm_din">out, 32, ap_fifo, mergeKopadStrm, pointer</column>
+<column name="mergeKopadStrm_full_n">in, 1, ap_fifo, mergeKopadStrm, pointer</column>
+<column name="mergeKopadStrm_write">out, 1, ap_fifo, mergeKopadStrm, pointer</column>
+<column name="mergeKopadStrm_num_data_valid">in, 32, ap_fifo, mergeKopadStrm, pointer</column>
+<column name="mergeKopadStrm_fifo_cap">in, 32, ap_fifo, mergeKopadStrm, pointer</column>
+<column name="mergeKopadLenStrm_din">out, 64, ap_fifo, mergeKopadLenStrm, pointer</column>
+<column name="mergeKopadLenStrm_full_n">in, 1, ap_fifo, mergeKopadLenStrm, pointer</column>
+<column name="mergeKopadLenStrm_write">out, 1, ap_fifo, mergeKopadLenStrm, pointer</column>
+<column name="mergeKopadLenStrm_num_data_valid">in, 3, ap_fifo, mergeKopadLenStrm, pointer</column>
+<column name="mergeKopadLenStrm_fifo_cap">in, 3, ap_fifo, mergeKopadLenStrm, pointer</column>
+<column name="eMergeKopadLenStrm_din">out, 1, ap_fifo, eMergeKopadLenStrm, pointer</column>
+<column name="eMergeKopadLenStrm_full_n">in, 1, ap_fifo, eMergeKopadLenStrm, pointer</column>
+<column name="eMergeKopadLenStrm_write">out, 1, ap_fifo, eMergeKopadLenStrm, pointer</column>
+<column name="eMergeKopadLenStrm_num_data_valid">in, 3, ap_fifo, eMergeKopadLenStrm, pointer</column>
+<column name="eMergeKopadLenStrm_fifo_cap">in, 3, ap_fifo, eMergeKopadLenStrm, pointer</column>
+</table>
+</item>
+</section>
+</profile>

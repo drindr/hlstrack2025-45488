@@ -1,0 +1,9 @@
+make[1]: Entering directory '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/sim/wrapc'
+   Build using "/tools/Xilinx/Vitis/2024.2/vcxx/libexec//clang++"
+   Compiling apatb_kernel_cholesky_0.cpp
+   Compiling apatb_kernel_cholesky_0_util.cpp
+   Compiling kernel_cholesky_0.cpp_pre.cpp.tb.cpp
+   Compiling test_cholesky.cpp_pre.cpp.tb.cpp
+   Compiling apatb_kernel_cholesky_0_ir.ll
+   Generating cosim.tv.exe
+make[1]: Leaving directory '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/sim/wrapc'

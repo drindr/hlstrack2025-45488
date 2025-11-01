@@ -1,0 +1,883 @@
+---
+MainSourceFile:  /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          283907
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          284373
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          284840
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          568303
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_41_1:  '
+    FileOffset:      41
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/compress_utils.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1756874
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_41_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_T2P + BRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      66
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_82_1:  '
+    FileOffset:      82
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1760215
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_82_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_2:  '
+    FileOffset:      88
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1760389
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_93_3:  '
+    FileOffset:      93
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1760576
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_93_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_111_4:  '
+    FileOffset:      111
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1761250
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_111_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_5:  '
+    FileOffset:      123
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1761604
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_6:  '
+    FileOffset:      139
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1762037
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_150_7:  '
+    FileOffset:      150
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1762334
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_150_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_171_8:  '
+    FileOffset:      171
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1763008
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_171_8: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: xpm_memory_uram pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      239
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + srl is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      246
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_253_1:  '
+    FileOffset:      253
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1765240
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_253_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_259_2:  '
+    FileOffset:      259
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1765390
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_259_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_314_3:  '
+    FileOffset:      314
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1766859
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_314_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_334_4:  '
+    FileOffset:      334
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1767601
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_334_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_346_5:  '
+    FileOffset:      346
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1767952
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_346_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_6:  '
+    FileOffset:      351
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1768276
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_1:  '
+    FileOffset:      120
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1779698
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_2:  '
+    FileOffset:      124
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1779815
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      149
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      150
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_157_1:  '
+    FileOffset:      157
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1781087
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_157_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_246_1:  '
+    FileOffset:      246
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1784303
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_246_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_321_1:  '
+    FileOffset:      321
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1786674
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_321_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_331_2:  '
+    FileOffset:      331
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1786956
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_331_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_340_3:  '
+    FileOffset:      340
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1787244
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_340_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_369_1:  '
+    FileOffset:      369
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1788170
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_369_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_434_1:  '
+    FileOffset:      434
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1789909
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_434_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, fifo + srl is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      438
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_optional.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_115_1:  '
+    FileOffset:      115
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_downsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1799566
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_115_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_228_1:  '
+    FileOffset:      228
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_downsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1803163
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_228_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_443_1:  '
+    FileOffset:      443
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_downsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1810612
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_443_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      80
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_91_1:  '
+    FileOffset:      91
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1812586
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_91_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_2:  '
+    FileOffset:      100
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1812876
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_102_3:  '
+    FileOffset:      102
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1812923
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_102_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_126_4:  '
+    FileOffset:      126
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1814141
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_126_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_135_5:  '
+    FileOffset:      135
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1814513
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_135_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_1:  '
+    FileOffset:      183
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1815885
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_191_2:  '
+    FileOffset:      191
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1816122
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_191_2: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      291
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      418
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      449
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_460_1:  '
+    FileOffset:      460
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1824435
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_460_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_469_2:  '
+    FileOffset:      469
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1824758
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_469_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_471_3:  '
+    FileOffset:      471
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1824805
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_471_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_501_4:  '
+    FileOffset:      501
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1826291
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_501_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_510_5:  '
+    FileOffset:      510
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1826663
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_510_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_573_1:  '
+    FileOffset:      573
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1828224
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_573_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_578_2:  '
+    FileOffset:      578
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1828407
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_578_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_611_1:  '
+    FileOffset:      611
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1829257
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_611_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_697_1:  '
+    FileOffset:      697
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/mm2s.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1831523
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_697_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_119_1:  '
+    FileOffset:      119
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1835314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_119_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_1:  '
+    FileOffset:      169
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1837063
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_285_1:  '
+    FileOffset:      285
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1840528
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_285_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_335_1:  '
+    FileOffset:      335
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1841941
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_335_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_373_1:  '
+    FileOffset:      373
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1843006
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_373_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_420_1:  '
+    FileOffset:      420
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/stream_upsizer.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1844520
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_420_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_88_1:  '
+    FileOffset:      88
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1846118
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_88_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_1:  '
+    FileOffset:      128
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1847177
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_175_1:  '
+    FileOffset:      175
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1848377
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_175_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_182_2:  '
+    FileOffset:      182
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1848568
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_182_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_3:  '
+    FileOffset:      183
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1848597
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_202_4:  '
+    FileOffset:      202
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1849278
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_202_4: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      292
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      346
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_349_1:  '
+    FileOffset:      349
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1853425
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_349_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_359_2:  '
+    FileOffset:      359
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1853644
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_359_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_361_3:  '
+    FileOffset:      361
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1853700
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_361_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_363_4:  '
+    FileOffset:      363
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1853786
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_363_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_385_5:  '
+    FileOffset:      385
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1854768
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_385_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_393_6:  '
+    FileOffset:      393
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1855214
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_393_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_402_7:  '
+    FileOffset:      402
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1855485
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_402_7: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, RAM_2P + LUTRAM is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      451
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_454_1:  '
+    FileOffset:      454
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1857039
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_454_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_464_2:  '
+    FileOffset:      464
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1857258
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_464_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_466_3:  '
+    FileOffset:      466
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1857314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_466_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_468_4:  '
+    FileOffset:      468
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1857400
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_468_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_491_5:  '
+    FileOffset:      491
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1858441
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_491_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_499_6:  '
+    FileOffset:      499
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1858887
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_499_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_508_7:  '
+    FileOffset:      508
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1859158
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_508_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_570_1:  '
+    FileOffset:      570
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1860910
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_570_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_579_2:  '
+    FileOffset:      579
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1861130
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_579_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_615_1:  '
+    FileOffset:      615
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1862094
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_615_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_648_1:  '
+    FileOffset:      648
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1863016
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_648_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_716_1:  '
+    FileOffset:      716
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1864971
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_716_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_791_1:  '
+    FileOffset:      791
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/s2mm.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1866794
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_791_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      297
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      330
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      331
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      366
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      367
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      368
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_376_1:  '
+    FileOffset:      376
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1878897
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_376_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_419_1:  '
+    FileOffset:      419
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1880623
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_419_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_425_2:  '
+    FileOffset:      425
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1880814
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_425_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_453_3:  '
+    FileOffset:      453
+    FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz4_compress.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1881987
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_453_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      62
+    FilePath:        lz4_compress_test.cpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, FIFO + SRL is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      63
+    FilePath:        lz4_compress_test.cpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_100_1:  '
+    FileOffset:      100
+    FilePath:        lz4_compress_test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1884995
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_100_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_123_2:  '
+    FileOffset:      123
+    FilePath:        lz4_compress_test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1885673
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_123_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_124_3:  '
+    FileOffset:      124
+    FilePath:        lz4_compress_test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp
+        Offset:          1885703
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_124_3: '
+...

@@ -1,0 +1,110 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "test.cpp",
+    "fileloc": 65,
+    "instructions": 20,
+    "name": "test_hmac_sha256",
+    "total_instructions": 2449
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "6 7",
+    "file": "hmac.hpp",
+    "fileloc": 236,
+    "instructions": 18,
+    "name": "resHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1085
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "2 5",
+    "file": "hmac.hpp",
+    "fileloc": 180,
+    "instructions": 18,
+    "name": "msgHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1097
+  },
+  "11": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 110,
+    "instructions": 213,
+    "name": "kpad<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 213
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 143,
+    "instructions": 41,
+    "name": "mergeKipad<32, 64, 256, 64>",
+    "total_instructions": 41
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "9 8",
+    "file": "sha224_256.hpp",
+    "fileloc": 911,
+    "instructions": 18,
+    "name": "sha256_top<32, 256>",
+    "total_instructions": 1036
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "11 10 1",
+    "file": "hmac.hpp",
+    "fileloc": 260,
+    "instructions": 34,
+    "name": "hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 2429
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "hash",
+    "total_instructions": 1038
+  },
+  "6": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 207,
+    "instructions": 29,
+    "name": "mergeKopad<32, 64, 256, 32, 64>",
+    "total_instructions": 29
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "hash",
+    "total_instructions": 1038
+  },
+  "8": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 568,
+    "instructions": 218,
+    "name": "sha256Digest_unroll2<256>",
+    "total_instructions": 267
+  },
+  "9": {
+    "basicblocks": 124,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 82,
+    "instructions": 436,
+    "name": "preProcessing",
+    "total_instructions": 751
+  }
+}

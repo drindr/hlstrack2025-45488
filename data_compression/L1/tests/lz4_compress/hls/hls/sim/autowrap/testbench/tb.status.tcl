@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/./sim/autowrap/testbench/lz4_compress_test.cpp_pre.cpp.tb.cpp

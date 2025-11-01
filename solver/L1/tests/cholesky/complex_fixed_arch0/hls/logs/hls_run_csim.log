@@ -1,0 +1,60 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-1998] cannot find relative file path './host' in directory(s): /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0
+INFO: [HLS 200-1465] Applying ini 'syn.file=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(6)
+INFO: [HLS 200-10] Adding design file '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file_cflags=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/datas/ -I./ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/host/ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/ -I/home/yxh/fpga-amd2025/solver/L1/tests/ -I/home/yxh/fpga-amd2025/solver/L1/include/ -I/home/yxh/fpga-amd2025/solver/L1/include/hw -I/home/yxh/fpga-amd2025/solver/L2/include -I/home/yxh/fpga-amd2025/solver/../utils/L1/include/' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'tb.file=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/host/test_cholesky.cpp' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/host/test_cholesky.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file_cflags=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/host/test_cholesky.cpp,-DMATRIX_DIM=3 -DMATRIX_LOWER_TRIANGULAR=0 -DSEL_ARCH=0 -D_DATA_PATH=/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/datas/ -I./ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/host/ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/ -I/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/ -I/home/yxh/fpga-amd2025/solver/L1/tests/ -I/home/yxh/fpga-amd2025/solver/L1/include/ -I/home/yxh/fpga-amd2025/solver/L1/include/hw -I ./host -I/home/yxh/fpga-amd2025/solver/../utils/L1/include/' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'syn.top=kernel_cholesky_0' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(5)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'clock=7.0' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(3)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=10%' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(4)
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.7ns.
+INFO: [HLS 200-1465] Applying ini 'vivado.flow=impl' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying ini 'vivado.rtl=verilog' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020-clg484-1' from /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/config.cmdline(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg484-1'
+WARNING: [HLS 200-1998] cannot find relative file path '../../host' in directory(s): /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/solution /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+make[1]: Entering directory '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/csim/build'
+   Compiling ../../../../../host/test_cholesky.cpp in debug mode
+   Compiling ../../../../../kernel/kernel_cholesky_0.cpp in debug mode
+   Generating csim.exe
+make[1]: Leaving directory '/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/csim/build'
+Running 1 fixed point tests per matrix type on 3 x 3 matrices with LowerTriangular set to 0
+RESULTS_TABLE,Test,IMAT,L Matching,DUT Ratio,LAPACK Ratio,Relative Ratio Difference
+RESULTS_TABLE,0,1,1,0.333333,0.333333,0
+RESULTS_TABLE,0,2,0,0.747014,0.382765,36.4248
+RESULTS_TABLE,0,3,0,0.479545,0.354167,12.5378
+RESULTS_TABLE,0,4,0,0.495681,0.491726,0.395533
+RESULTS_TABLE,0,5,0,0.723448,0.496184,22.7264
+RESULTS_TABLE,0,6,0,0.38559,0.192952,19.2638
+RESULTS_TABLE,0,7,0,0.341859,0.258333,8.35268
+RESULTS_TABLE,0,9,0,0.481557,0.441006,4.05514
+SUMMARY_TABLE,imat,Min Ratio, Max Ratio,Min Diff (Smaller),Max Diff (Larger),Same,Better,Worse
+SUMMARY_TABLE,1,0.333333,0.333333,0,0,1,0,0
+SUMMARY_TABLE,2,0.747014,0.747014,0,36.4248,0,0,1
+SUMMARY_TABLE,3,0.479545,0.479545,0,12.5378,0,0,1
+SUMMARY_TABLE,4,0.495681,0.495681,0,0.395533,0,0,1
+SUMMARY_TABLE,5,0.723448,0.723448,0,22.7264,0,0,1
+SUMMARY_TABLE,6,0.38559,0.38559,0,19.2638,0,0,1
+SUMMARY_TABLE,7,0.341859,0.341859,0,8.35268,0,0,1
+SUMMARY_TABLE,8,30,0,0,0,0,0,0
+SUMMARY_TABLE,9,0.481557,0.481557,0,4.05514,0,0,1
+SUMMARY_TABLE,all,0.333333,0.747014,0,36.4248,1,0,7
+TB:Pass
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 9
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-112] Total CPU user time: 11.02 seconds. Total CPU system time: 0.71 seconds. Total elapsed time: 11.55 seconds; peak allocated memory: 659.512 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 15s

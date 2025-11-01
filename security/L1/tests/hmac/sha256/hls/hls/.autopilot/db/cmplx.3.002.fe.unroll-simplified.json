@@ -1,0 +1,132 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "12",
+    "file": "test.cpp",
+    "fileloc": 65,
+    "instructions": 2,
+    "name": "test_hmac_sha256",
+    "total_instructions": 3045
+  },
+  "1": {
+    "basicblocks": 262,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 82,
+    "instructions": 967,
+    "loads": {
+      "L": 30
+    },
+    "name": "preProcessing",
+    "stores": {
+      "L": 102
+    },
+    "total_instructions": 967
+  },
+  "10": {
+    "basicblocks": 12,
+    "calls": "",
+    "file": "sha224_256.hpp",
+    "fileloc": 568,
+    "instructions": 301,
+    "loads": {
+      "G": 1,
+      "L": 13
+    },
+    "name": "sha256Digest_unroll2<256>",
+    "stores": {
+      "L": 49
+    },
+    "total_instructions": 301
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "1 10",
+    "file": "sha224_256.hpp",
+    "fileloc": 911,
+    "instructions": 15,
+    "name": "sha256_top<32, 256>",
+    "total_instructions": 1283
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "hmac.hpp",
+    "fileloc": 340,
+    "instructions": 2,
+    "name": "hmac<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 3043
+  },
+  "2": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 207,
+    "instructions": 29,
+    "name": "mergeKopad<32, 64, 256, 32, 64>",
+    "total_instructions": 29
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "11",
+    "file": "sha224_256.hpp",
+    "fileloc": 992,
+    "instructions": 2,
+    "name": "sha256<32>",
+    "total_instructions": 1285
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "2 9",
+    "file": "hmac.hpp",
+    "fileloc": 236,
+    "instructions": 15,
+    "name": "resHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1331
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 143,
+    "instructions": 41,
+    "name": "mergeKipad<32, 64, 256, 64>",
+    "total_instructions": 41
+  },
+  "6": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "hmac.hpp",
+    "fileloc": 110,
+    "instructions": 339,
+    "name": "kpad<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 339
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "5 9",
+    "file": "hmac.hpp",
+    "fileloc": 180,
+    "instructions": 15,
+    "name": "msgHash<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 1343
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "6 7 4",
+    "file": "hmac.hpp",
+    "fileloc": 260,
+    "instructions": 28,
+    "name": "hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>",
+    "total_instructions": 3041
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "test.cpp",
+    "fileloc": 56,
+    "instructions": 2,
+    "name": "hash",
+    "total_instructions": 1287
+  }
+}

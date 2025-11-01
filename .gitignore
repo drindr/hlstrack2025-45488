@@ -19,8 +19,6 @@
 
 /_ide
 
-hls
-hls_config.cfg
 # VS Code Local History
 .history/
 
@@ -38,16 +36,6 @@ hls_config.cfg
 *.exe
 build/
 dist/
-*.log
-
-# HLS generated files
-hls/
-*.rpt
-*.xml
-vivado*.jou
-vivado*.log
-*.str
-*.dir/
 
 # Python
 __pycache__/

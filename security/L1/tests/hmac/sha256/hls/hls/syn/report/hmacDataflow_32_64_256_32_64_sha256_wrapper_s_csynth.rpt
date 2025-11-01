@@ -1,0 +1,155 @@
+
+
+================================================================
+== Vitis HLS Report for 'hmacDataflow_32_64_256_32_64_sha256_wrapper_s'
+================================================================
+* Date:           Sat Nov  1 16:09:43 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.00 ns|  7.656 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |                                           |                                          |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+        |                  Instance                 |                  Module                  |   min   |   max   |    min   |    max   | min | max |   Type   |
+        +-------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+----------+
+        |kpad_32_64_256_32_64_sha256_wrapper_U0     |kpad_32_64_256_32_64_sha256_wrapper_s     |        ?|        ?|         ?|         ?|    ?|    ?|        no|
+        |msgHash_32_64_256_32_64_sha256_wrapper_U0  |msgHash_32_64_256_32_64_sha256_wrapper_s  |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        |resHash_32_64_256_32_64_sha256_wrapper_U0  |resHash_32_64_256_32_64_sha256_wrapper_s  |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+        +-------------------------------------------+------------------------------------------+---------+---------+----------+----------+-----+-----+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|      2|    -|
+|FIFO             |        -|    -|     594|    408|    -|
+|Instance         |        2|    -|   15599|  12713|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        2|    0|   16193|  13123|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|    0|      15|     24|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------+------------------------------------------+---------+----+------+------+-----+
+    |                  Instance                 |                  Module                  | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------------------------------------+------------------------------------------+---------+----+------+------+-----+
+    |kpad_32_64_256_32_64_sha256_wrapper_U0     |kpad_32_64_256_32_64_sha256_wrapper_s     |        0|   0|   271|  1197|    0|
+    |msgHash_32_64_256_32_64_sha256_wrapper_U0  |msgHash_32_64_256_32_64_sha256_wrapper_s  |        2|   0|  7532|  5915|    0|
+    |resHash_32_64_256_32_64_sha256_wrapper_U0  |resHash_32_64_256_32_64_sha256_wrapper_s  |        0|   0|  7796|  5601|    0|
+    +-------------------------------------------+------------------------------------------+---------+----+------+------+-----+
+    |Total                                      |                                          |        2|   0| 15599| 12713|    0|
+    +-------------------------------------------+------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +----------------+---------+----+----+-----+------+-----+---------+
+    |      Name      | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------+---------+----+----+-----+------+-----+---------+
+    |eKipadStrm_U    |        0|  99|   0|    -|     4|    1|        4|
+    |eMsgHashStrm_U  |        0|  99|   0|    -|     4|    1|        4|
+    |kipadStrm_U     |        0|  99|   0|    -|     4|  512|     2048|
+    |kopad2Strm_U    |        0|  99|   0|    -|     4|  512|     2048|
+    |kopadStrm_U     |        0|  99|   0|    -|     4|  512|     2048|
+    |msgHashStrm_U   |        0|  99|   0|    -|     4|  256|     1024|
+    +----------------+---------+----+----+-----+------+-----+---------+
+    |Total           |        0| 594|   0|    0|    24| 1794|     7176|
+    +----------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +--------------+----------+----+---+----+------------+------------+
+    | Variable Name| Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------+----------+----+---+----+------------+------------+
+    |ap_idle       |       and|   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+    |Total         |          |   0|  0|   2|           1|           1|
+    +--------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------+-----+-----+------------+---------------------------------------------------+--------------+
+|     RTL Ports    | Dir | Bits|  Protocol  |                   Source Object                   |    C Type    |
++------------------+-----+-----+------------+---------------------------------------------------+--------------+
+|keyStrm_dout      |   in|   32|     ap_fifo|                                            keyStrm|       pointer|
+|keyStrm_empty_n   |   in|    1|     ap_fifo|                                            keyStrm|       pointer|
+|keyStrm_read      |  out|    1|     ap_fifo|                                            keyStrm|       pointer|
+|msgStrm_dout      |   in|   32|     ap_fifo|                                            msgStrm|       pointer|
+|msgStrm_empty_n   |   in|    1|     ap_fifo|                                            msgStrm|       pointer|
+|msgStrm_read      |  out|    1|     ap_fifo|                                            msgStrm|       pointer|
+|lenStrm_dout      |   in|   64|     ap_fifo|                                            lenStrm|       pointer|
+|lenStrm_empty_n   |   in|    1|     ap_fifo|                                            lenStrm|       pointer|
+|lenStrm_read      |  out|    1|     ap_fifo|                                            lenStrm|       pointer|
+|eLenStrm_dout     |   in|    1|     ap_fifo|                                           eLenStrm|       pointer|
+|eLenStrm_empty_n  |   in|    1|     ap_fifo|                                           eLenStrm|       pointer|
+|eLenStrm_read     |  out|    1|     ap_fifo|                                           eLenStrm|       pointer|
+|hshStrm_din       |  out|  256|     ap_fifo|                                            hshStrm|       pointer|
+|hshStrm_full_n    |   in|    1|     ap_fifo|                                            hshStrm|       pointer|
+|hshStrm_write     |  out|    1|     ap_fifo|                                            hshStrm|       pointer|
+|eHshStrm_din      |  out|    1|     ap_fifo|                                           eHshStrm|       pointer|
+|eHshStrm_full_n   |   in|    1|     ap_fifo|                                           eHshStrm|       pointer|
+|eHshStrm_write    |  out|    1|     ap_fifo|                                           eHshStrm|       pointer|
+|ap_clk            |   in|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_rst            |   in|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_start          |   in|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_done           |  out|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_ready          |  out|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_idle           |  out|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
+|ap_continue       |   in|    1|  ap_ctrl_hs|  hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>|  return value|
++------------------+-----+-----+------------+---------------------------------------------------+--------------+
+

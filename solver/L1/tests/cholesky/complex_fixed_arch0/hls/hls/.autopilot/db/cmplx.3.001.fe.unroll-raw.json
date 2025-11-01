@@ -1,0 +1,788 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3",
+    "file": "kernel_cholesky_0.cpp",
+    "fileloc": 24,
+    "instructions": 2,
+    "name": "kernel_cholesky_0",
+    "total_instructions": 3698
+  },
+  "1": {
+    "basicblocks": 49,
+    "calls": "43 42 56",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 150,
+    "loads": {
+      "L": 16
+    },
+    "name": "x_complex<ap_fixed<32, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 157
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<32, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 165
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "44",
+    "file": "cholesky.hpp",
+    "fileloc": 663,
+    "instructions": 2,
+    "name": "choleskyTop<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >",
+    "total_instructions": 3642
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "57",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 72
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 65,
+    "instructions": 1,
+    "name": "real",
+    "total_instructions": 1
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "16",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<32, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 77
+  },
+  "15": {
+    "basicblocks": 25,
+    "calls": "53 18",
+    "file": "hls_x_complex.h",
+    "fileloc": 343,
+    "instructions": 62,
+    "loads": {
+      "L": 5
+    },
+    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 67
+  },
+  "16": {
+    "basicblocks": 9,
+    "calls": "43 42 33",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 62,
+    "loads": {
+      "L": 12
+    },
+    "name": "x_complex<ap_fixed<32, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 69
+  },
+  "17": {
+    "basicblocks": 9,
+    "calls": "27 41 49",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 63,
+    "loads": {
+      "L": 12
+    },
+    "name": "x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 70
+  },
+  "18": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 72,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "imag",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "19": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 72,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "imag",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "2": {
+    "basicblocks": 87,
+    "calls": "27 41 41 27 34",
+    "file": "hls_x_complex.h",
+    "fileloc": 96,
+    "instructions": 223,
+    "loads": {
+      "L": 10
+    },
+    "name": "operator*=",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 232
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "15",
+    "file": "hls_x_complex.h",
+    "fileloc": 351,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 75
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_x_complex.h",
+    "fileloc": 119,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator*",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 240
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 67,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "real",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "23": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "24": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "25": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 72,
+    "instructions": 4,
+    "loads": {
+      "L": 1
+    },
+    "name": "imag",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 4
+  },
+  "26": {
+    "basicblocks": 1,
+    "calls": "36",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 71
+  },
+  "27": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 65,
+    "instructions": 1,
+    "name": "real",
+    "total_instructions": 1
+  },
+  "28": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 65,
+    "instructions": 1,
+    "name": "real",
+    "total_instructions": 1
+  },
+  "29": {
+    "basicblocks": 1,
+    "calls": "50",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<34, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 201
+  },
+  "3": {
+    "basicblocks": 13,
+    "calls": "11",
+    "file": "cholesky.hpp",
+    "fileloc": 696,
+    "instructions": 54,
+    "loads": {
+      "L": 2
+    },
+    "name": "cholesky<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > > >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 3696
+  },
+  "30": {
+    "basicblocks": 9,
+    "calls": "24 19",
+    "file": "hls_x_complex.h",
+    "fileloc": 343,
+    "instructions": 36,
+    "loads": {
+      "L": 5
+    },
+    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 41
+  },
+  "31": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "32": {
+    "basicblocks": 1,
+    "calls": "4",
+    "file": "hls_x_complex.h",
+    "fileloc": 119,
+    "instructions": 7,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator*",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 458
+  },
+  "33": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 48,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_complex",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "34": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 48,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_complex",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "35": {
+    "basicblocks": 4,
+    "calls": "34",
+    "file": "hls_x_complex.h",
+    "fileloc": 75,
+    "instructions": 14,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 19
+  },
+  "36": {
+    "basicblocks": 9,
+    "calls": "28 31 34",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 56,
+    "loads": {
+      "L": 12
+    },
+    "name": "x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 63
+  },
+  "37": {
+    "basicblocks": 63,
+    "calls": "43 42",
+    "file": "hls_x_complex.h",
+    "fileloc": 177,
+    "instructions": 135,
+    "loads": {
+      "L": 12
+    },
+    "name": "operator+=",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 137
+  },
+  "38": {
+    "basicblocks": 63,
+    "calls": "43 42",
+    "file": "hls_x_complex.h",
+    "fileloc": 220,
+    "instructions": 131,
+    "loads": {
+      "L": 10
+    },
+    "name": "operator-=",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 133
+  },
+  "39": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 48,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_complex",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "4": {
+    "basicblocks": 215,
+    "calls": "28 31 31 28 39",
+    "file": "hls_x_complex.h",
+    "fileloc": 96,
+    "instructions": 442,
+    "loads": {
+      "L": 10
+    },
+    "name": "operator*=",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 451
+  },
+  "40": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "sqrtfloat.cpp",
+    "fileloc": 11,
+    "instructions": 2,
+    "name": "sqrtf",
+    "total_instructions": 2
+  },
+  "41": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "42": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "43": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 65,
+    "instructions": 1,
+    "name": "real",
+    "total_instructions": 1
+  },
+  "44": {
+    "basicblocks": 136,
+    "calls": "13 55 30 48 8 6 21 51 37 14 54 29 20 32 5 26 20 12 35 51 9 10 47 7 40 47 7 29 45 20 12",
+    "file": "cholesky.hpp",
+    "fileloc": 442,
+    "instructions": 535,
+    "loads": {
+      "L": 12
+    },
+    "name": "choleskyAlt<false, 3, xf::solver::choleskyTraits<false, 3, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >, hls::x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> > >",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 3640
+  },
+  "45": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 64,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "real",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "46": {
+    "basicblocks": 9,
+    "calls": "27 41 49",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 62,
+    "loads": {
+      "L": 12
+    },
+    "name": "x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 69
+  },
+  "47": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 67,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "real",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "48": {
+    "basicblocks": 1,
+    "calls": "17",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 78
+  },
+  "49": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 48,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_complex",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "5": {
+    "basicblocks": 63,
+    "calls": "28 31",
+    "file": "hls_x_complex.h",
+    "fileloc": 186,
+    "instructions": 137,
+    "loads": {
+      "L": 12
+    },
+    "name": "operator+=<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 139
+  },
+  "50": {
+    "basicblocks": 65,
+    "calls": "52 23 39",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 186,
+    "loads": {
+      "L": 18
+    },
+    "name": "x_complex<ap_fixed<34, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 193
+  },
+  "51": {
+    "basicblocks": 1,
+    "calls": "46",
+    "file": "hls_x_complex.h",
+    "fileloc": 82,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 77
+  },
+  "52": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 65,
+    "instructions": 1,
+    "name": "real",
+    "total_instructions": 1
+  },
+  "53": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 70,
+    "instructions": 1,
+    "name": "imag",
+    "total_instructions": 1
+  },
+  "54": {
+    "basicblocks": 82,
+    "calls": "52 47 23 7",
+    "file": "cholesky.hpp",
+    "fileloc": 324,
+    "instructions": 196,
+    "loads": {
+      "L": 2
+    },
+    "name": "cholesky_prod_sum_mult<ap_fixed<34, 2, AP_RND_CONV, AP_SAT, 0>, ap_fixed<33, 17, AP_RND_CONV, AP_SAT, 0>, ap_fixed<34, 2, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 204
+  },
+  "55": {
+    "basicblocks": 12,
+    "calls": "49",
+    "file": "hls_x_complex.h",
+    "fileloc": 75,
+    "instructions": 22,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator=",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 27
+  },
+  "56": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 48,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_complex",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 5
+  },
+  "57": {
+    "basicblocks": 9,
+    "calls": "28 31 34",
+    "file": "hls_x_complex.h",
+    "fileloc": 57,
+    "instructions": 57,
+    "loads": {
+      "L": 12
+    },
+    "name": "x_complex<ap_fixed<16, 1, AP_RND_CONV, AP_SAT, 0> >",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 64
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "30",
+    "file": "hls_x_complex.h",
+    "fileloc": 351,
+    "instructions": 8,
+    "loads": {
+      "L": 2
+    },
+    "name": "x_conj<ap_fixed<16, 1, AP_RND_CONV, AP_WRAP, 0> >",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 49
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_x_complex.h",
+    "fileloc": 72,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "imag",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "8": {
+    "basicblocks": 17,
+    "calls": "27 22 41 25",
+    "file": "hls_x_complex.h",
+    "fileloc": 258,
+    "instructions": 67,
+    "loads": {
+      "L": 8
+    },
+    "name": "operator-",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 77
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "38",
+    "file": "hls_x_complex.h",
+    "fileloc": 244,
+    "instructions": 6,
+    "loads": {
+      "L": 2
+    },
+    "name": "operator-",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 139
+  }
+}

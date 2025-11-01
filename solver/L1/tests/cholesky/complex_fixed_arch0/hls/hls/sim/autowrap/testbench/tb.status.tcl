@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/./sim/autowrap/testbench/kernel_cholesky_0.cpp_pre.cpp.tb.cpp

@@ -1,0 +1,153 @@
+
+
+================================================================
+== Vitis HLS Report for 'sha256_top_32_256_s'
+================================================================
+* Date:           Sat Nov  1 16:09:41 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  9.00 ns|  7.656 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%blk_strm = alloca i64 1"   --->   Operation 5 'alloca' 'blk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 512> <Depth = 32> <FIFO>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%nblk_strm = alloca i64 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:923]   --->   Operation 6 'alloca' 'nblk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 32> <FIFO>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%end_nblk_strm = alloca i64 1" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:934]   --->   Operation 7 'alloca' 'end_nblk_strm' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 79 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 3.72> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 32> <FIFO>
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln950 = call void @preProcessing, i32 %mergeKopadStrm, i64 %mergeKopadLenStrm, i1 %eMergeKopadLenStrm, i512 %blk_strm, i64 %nblk_strm, i1 %end_nblk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:950]   --->   Operation 8 'call' 'call_ln950' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln950 = call void @preProcessing, i32 %mergeKopadStrm, i64 %mergeKopadLenStrm, i1 %eMergeKopadLenStrm, i512 %blk_strm, i64 %nblk_strm, i1 %end_nblk_strm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:950]   --->   Operation 9 'call' 'call_ln950' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln953 = call void @sha256Digest_unroll2<256>, i64 %nblk_strm, i1 %end_nblk_strm, i512 %blk_strm, i256 %hshStrm, i1 %eHshStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:953]   --->   Operation 10 'call' 'call_ln953' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 11 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln916 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_13" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:916]   --->   Operation 11 'specdataflowpipeline' 'specdataflowpipeline_ln916' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %eHshStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i256 %hshStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %mergeKopadStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 14 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 15 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i64 %mergeKopadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 15 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 16 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i1 %eMergeKopadLenStrm, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 16 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %hshStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %eHshStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %mergeKopadStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %mergeKopadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %eMergeKopadLenStrm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @blk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i512 %blk_strm, i512 %blk_strm"   --->   Operation 22 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %blk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%empty_38 = specchannel i32 @_ssdm_op_SpecChannel, void @nblk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i64 %nblk_strm, i64 %nblk_strm"   --->   Operation 24 'specchannel' 'empty_38' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %nblk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%empty_39 = specchannel i32 @_ssdm_op_SpecChannel, void @end_nblk_strm_str, i32 1, void @p_str, void @p_str, i32 32, i32 32, i1 %end_nblk_strm, i1 %end_nblk_strm"   --->   Operation 26 'specchannel' 'empty_39' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %end_nblk_strm, void @empty_11, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_13, void @empty_13, void @empty_13, i32 0, i32 0, i32 0, i32 0, void @empty_13, void @empty_13, i32 4294967295, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%specmemcore_ln920 = specmemcore void @_ssdm_op_SpecMemCore, i512 %blk_strm, i64 666, i64 9, i64 18446744073709551615" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:920]   --->   Operation 28 'specmemcore' 'specmemcore_ln920' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specmemcore_ln925 = specmemcore void @_ssdm_op_SpecMemCore, i64 %nblk_strm, i64 666, i64 9, i64 18446744073709551615" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:925]   --->   Operation 29 'specmemcore' 'specmemcore_ln925' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln936 = specmemcore void @_ssdm_op_SpecMemCore, i1 %end_nblk_strm, i64 666, i64 9, i64 18446744073709551615" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:936]   --->   Operation 30 'specmemcore' 'specmemcore_ln936' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/2] (0.00ns)   --->   "%call_ln953 = call void @sha256Digest_unroll2<256>, i64 %nblk_strm, i1 %end_nblk_strm, i512 %blk_strm, i256 %hshStrm, i1 %eHshStrm" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:953]   --->   Operation 31 'call' 'call_ln953' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%ret_ln964 = ret" [/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:964]   --->   Operation 32 'ret' 'ret_ln964' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 9.000ns, clock uncertainty: 0.900ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

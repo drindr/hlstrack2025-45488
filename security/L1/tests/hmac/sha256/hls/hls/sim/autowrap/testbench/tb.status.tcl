@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/./sim/autowrap/testbench/test.cpp_pre.cpp.tb.cpp

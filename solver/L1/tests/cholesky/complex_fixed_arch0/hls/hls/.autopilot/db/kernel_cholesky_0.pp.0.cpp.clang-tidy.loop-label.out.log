@@ -1,0 +1,890 @@
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2272:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2272:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2286:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2286:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2300:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high+1; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:2300:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:3922:7: warning: Added loop label VITIS_LOOP_1248_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1248_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:3922:7: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16153:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16154:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16155:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16156:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16157:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16187:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16188:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16189:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16190:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16191:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16192:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16193:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16194:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16195:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16196:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16246:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16247:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16248:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16275:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16276:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16277:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16278:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16279:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16280:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16316:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16317:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16591:5: warning: Added loop label VITIS_LOOP_61_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_61_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16591:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16637:5: warning: Added loop label VITIS_LOOP_117_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_117_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16637:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16800:9: warning: Added loop label VITIS_LOOP_289_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_289_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16800:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16952:9: warning: Added loop label VITIS_LOOP_449_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_449_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:16952:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17132:5: warning: Added loop label VITIS_LOOP_629_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_629_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17132:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17136:5: warning: Added loop label VITIS_LOOP_633_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_633_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17136:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17246:5: warning: Added loop label VITIS_LOOP_743_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_743_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17246:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17336:7: warning: Added loop label VITIS_LOOP_840_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_840_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17336:7: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17355:7: warning: Added loop label VITIS_LOOP_859_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_859_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17355:7: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17645:5: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1173_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17645:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17728:5: warning: Added loop label VITIS_LOOP_1256_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1256_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:17728:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18134:13: warning: Added loop label VITIS_LOOP_68_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_68_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18134:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18140:17: warning: Added loop label VITIS_LOOP_74_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_74_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18140:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18144:17: warning: Added loop label VITIS_LOOP_78_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_78_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18144:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18192:13: warning: Added loop label VITIS_LOOP_145_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_145_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18192:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18198:17: warning: Added loop label VITIS_LOOP_151_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_151_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18198:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18202:17: warning: Added loop label VITIS_LOOP_155_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_155_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18202:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18217:9: warning: Added loop label VITIS_LOOP_170_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_170_7: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18217:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18225:17: warning: Added loop label VITIS_LOOP_178_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_178_8: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18225:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18290:13: warning: Added loop label VITIS_LOOP_243_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_243_9: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18290:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18296:17: warning: Added loop label VITIS_LOOP_249_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_249_10: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18296:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18300:17: warning: Added loop label VITIS_LOOP_253_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_253_11: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18300:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18315:9: warning: Added loop label VITIS_LOOP_268_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_268_12: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18315:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18323:17: warning: Added loop label VITIS_LOOP_276_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_276_13: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18323:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18552:13: warning: Added loop label VITIS_LOOP_505_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_505_14: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18552:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18558:17: warning: Added loop label VITIS_LOOP_511_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_511_15: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18558:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18562:17: warning: Added loop label VITIS_LOOP_515_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_515_16: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18562:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18572:9: warning: Added loop label VITIS_LOOP_525_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_525_17: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18572:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18576:9: warning: Added loop label VITIS_LOOP_529_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_529_18: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18576:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18586:9: warning: Added loop label VITIS_LOOP_539_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_539_19: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18586:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18594:17: warning: Added loop label VITIS_LOOP_547_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_547_20: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18594:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18955:13: warning: Added loop label VITIS_LOOP_908_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_908_21: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18955:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18961:17: warning: Added loop label VITIS_LOOP_914_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_914_22: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18961:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18965:17: warning: Added loop label VITIS_LOOP_918_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_918_23: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:18965:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19081:13: warning: Added loop label VITIS_LOOP_1034_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1034_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19081:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19087:17: warning: Added loop label VITIS_LOOP_1040_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1040_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19087:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19091:17: warning: Added loop label VITIS_LOOP_1044_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1044_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19091:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19178:13: warning: Added loop label VITIS_LOOP_1131_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1131_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19178:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19184:17: warning: Added loop label VITIS_LOOP_1137_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1137_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19184:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19188:17: warning: Added loop label VITIS_LOOP_1141_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1141_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19188:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19207:9: warning: Added loop label VITIS_LOOP_1160_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1160_7: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19207:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19214:17: warning: Added loop label VITIS_LOOP_1167_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1167_8: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19214:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19330:13: warning: Added loop label VITIS_LOOP_1283_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1283_9: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19330:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19336:17: warning: Added loop label VITIS_LOOP_1289_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1289_10: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19336:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19340:17: warning: Added loop label VITIS_LOOP_1293_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1293_11: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19340:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19360:9: warning: Added loop label VITIS_LOOP_1313_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1313_12: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19360:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19367:17: warning: Added loop label VITIS_LOOP_1320_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1320_13: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19367:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19629:13: warning: Added loop label VITIS_LOOP_1582_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1582_14: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19629:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19635:17: warning: Added loop label VITIS_LOOP_1588_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1588_15: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19635:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19639:17: warning: Added loop label VITIS_LOOP_1592_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1592_16: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19639:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19663:9: warning: Added loop label VITIS_LOOP_1616_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1616_17: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19663:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19670:17: warning: Added loop label VITIS_LOOP_1623_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1623_18: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:19670:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20100:13: warning: Added loop label VITIS_LOOP_2053_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2053_19: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20100:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20106:17: warning: Added loop label VITIS_LOOP_2059_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2059_20: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20106:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20110:17: warning: Added loop label VITIS_LOOP_2063_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2063_21: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20110:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20240:13: warning: Added loop label VITIS_LOOP_2193_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2193_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20240:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20247:17: warning: Added loop label VITIS_LOOP_2200_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2200_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20247:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20251:17: warning: Added loop label VITIS_LOOP_2204_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2204_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20251:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20298:13: warning: Added loop label VITIS_LOOP_2251_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2251_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20298:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20305:17: warning: Added loop label VITIS_LOOP_2258_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2258_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20305:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20309:17: warning: Added loop label VITIS_LOOP_2262_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2262_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20309:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20327:9: warning: Added loop label VITIS_LOOP_2280_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2280_7: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20327:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20382:13: warning: Added loop label VITIS_LOOP_2335_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2335_8: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20382:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20389:17: warning: Added loop label VITIS_LOOP_2342_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2342_9: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20389:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20393:17: warning: Added loop label VITIS_LOOP_2346_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2346_10: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20393:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20411:9: warning: Added loop label VITIS_LOOP_2364_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2364_11: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20411:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20500:13: warning: Added loop label VITIS_LOOP_2453_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2453_12: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20500:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20507:17: warning: Added loop label VITIS_LOOP_2460_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2460_13: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20507:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20511:17: warning: Added loop label VITIS_LOOP_2464_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2464_14: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20511:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20521:9: warning: Added loop label VITIS_LOOP_2474_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2474_15: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20521:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20525:9: warning: Added loop label VITIS_LOOP_2478_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2478_16: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20525:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20536:9: warning: Added loop label VITIS_LOOP_2489_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2489_17: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20536:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20544:17: warning: Added loop label VITIS_LOOP_2497_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2497_18: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20544:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20869:13: warning: Added loop label VITIS_LOOP_2822_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2822_19: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20869:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20876:17: warning: Added loop label VITIS_LOOP_2829_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2829_20: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20876:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20880:17: warning: Added loop label VITIS_LOOP_2833_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2833_21: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20880:17: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20968:4: warning: Added loop label VITIS_LOOP_2921_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2921_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20968:4: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20975:5: warning: Added loop label VITIS_LOOP_2928_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2928_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20975:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20979:5: warning: Added loop label VITIS_LOOP_2932_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2932_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20979:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20994:3: warning: Added loop label VITIS_LOOP_2947_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2947_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:20994:3: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21026:4: warning: Added loop label VITIS_LOOP_2979_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_2979_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21026:4: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21033:5: warning: Added loop label VITIS_LOOP_2986_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_2986_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21033:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21037:5: warning: Added loop label VITIS_LOOP_2990_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2990_7: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21037:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21052:3: warning: Added loop label VITIS_LOOP_3005_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3005_8: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21052:3: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21102:4: warning: Added loop label VITIS_LOOP_3055_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3055_9: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21102:4: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21109:5: warning: Added loop label VITIS_LOOP_3062_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3062_10: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21109:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21113:5: warning: Added loop label VITIS_LOOP_3066_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3066_11: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21113:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21128:3: warning: Added loop label VITIS_LOOP_3081_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3081_12: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21128:3: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21265:4: warning: Added loop label VITIS_LOOP_3218_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3218_13: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21265:4: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21272:5: warning: Added loop label VITIS_LOOP_3225_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3225_14: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21272:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21276:5: warning: Added loop label VITIS_LOOP_3229_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3229_15: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21276:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21291:3: warning: Added loop label VITIS_LOOP_3244_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3244_16: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21291:3: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21451:4: warning: Added loop label VITIS_LOOP_3404_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3404_17: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21451:4: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21458:5: warning: Added loop label VITIS_LOOP_3411_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3411_18: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21458:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21462:5: warning: Added loop label VITIS_LOOP_3415_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3415_19: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:21462:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22177:13: warning: Added loop label VITIS_LOOP_703_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_703_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22177:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22395:13: warning: Added loop label VITIS_LOOP_921_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_921_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22395:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22812:13: warning: Added loop label VITIS_LOOP_1345_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1345_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:22812:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23132:9: warning: Added loop label VITIS_LOOP_240_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_240_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23132:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23160:9: warning: Added loop label VITIS_LOOP_268_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_268_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23160:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23862:13: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_48_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23862:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23915:5: warning: Added loop label VITIS_LOOP_109_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_109_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23915:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23929:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_123_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23929:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23959:13: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_153_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:23959:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24044:12: warning: Added loop label VITIS_LOOP_281_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_281_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24044:12: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24064:16: warning: Added loop label VITIS_LOOP_301_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_301_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24064:16: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24078:20: warning: Added loop label VITIS_LOOP_315_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_315_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24078:20: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24171:12: warning: Added loop label VITIS_LOOP_433_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_433_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24171:12: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24185:15: warning: Added loop label VITIS_LOOP_447_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_447_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24185:15: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24305:13: warning: Added loop label VITIS_LOOP_33_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_33_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24305:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24429:13: warning: Added loop label VITIS_LOOP_183_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_183_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24429:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24484:13: warning: Added loop label VITIS_LOOP_248_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_248_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:24484:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25003:2: warning: Added loop label VITIS_LOOP_16_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_16_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25003:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25014:2: warning: Added loop label VITIS_LOOP_27_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_27_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25014:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25025:2: warning: Added loop label VITIS_LOOP_38_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_38_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25025:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25036:2: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_49_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25036:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25047:2: warning: Added loop label VITIS_LOOP_60_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_60_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25047:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25058:2: warning: Added loop label VITIS_LOOP_71_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_71_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25058:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25069:2: warning: Added loop label VITIS_LOOP_82_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_82_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25069:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25080:2: warning: Added loop label VITIS_LOOP_93_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_93_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:25080:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27103:12: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_26_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27103:12: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27167:7: warning: Added loop label VITIS_LOOP_40_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_40_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27167:7: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27284:9: warning: Added loop label VITIS_LOOP_49_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_49_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27284:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27309:5: warning: Added loop label VITIS_LOOP_81_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_81_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27309:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27379:8: warning: Added loop label VITIS_LOOP_169_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_169_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:27379:8: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29690:50: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp_i type = ram_2p impl = lutram
+                                                 ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29728:48: error: Invalid Directive: for current device, ram_2p + lutram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = tmp type = ram_2p impl = lutram
+                                               ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29737:9: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+        for (int p = 0; p < NCU; p++) {
+        ^~~
+        VITIS_LOOP_86_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29737:9: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29805:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29809:13: warning: Added loop label VITIS_LOOP_180_1:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_180_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29809:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29819:13: warning: Added loop label VITIS_LOOP_190_2:   [xilinx-label-all-loops]
+            for (int c = 0; c < m; c++) {
+            ^~~
+            VITIS_LOOP_190_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29819:13: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29852:5: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < nrows; ++i) {
+    ^~~
+    VITIS_LOOP_53_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29852:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29854:2: warning: Added loop label VITIS_LOOP_55_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < nrows; ++j) {
+ ^~~
+ VITIS_LOOP_55_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29854:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29876:49: error: Invalid Directive: for current device, xpm_memory + uram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable = matA type = xpm_memory impl = uram
+                                                ^
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29884:2: warning: Added loop label VITIS_LOOP_85_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < size; ++i) {
+ ^~~
+ VITIS_LOOP_85_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29884:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29888:2: warning: Added loop label VITIS_LOOP_89_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < TO; ++j) {
+ ^~~
+ VITIS_LOOP_89_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29888:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29911:2: warning: Added loop label VITIS_LOOP_112_3:   [xilinx-label-all-loops]
+ for (int i = 0; i < size; ++i) {
+ ^~~
+ VITIS_LOOP_112_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29911:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29915:2: warning: Added loop label VITIS_LOOP_116_4:   [xilinx-label-all-loops]
+ for (int j = 0; j < TO; ++j) {
+ ^~~
+ VITIS_LOOP_116_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:29915:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59918:5: warning: Added loop label VITIS_LOOP_381_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsColsA; r++) {
+    ^~~
+    VITIS_LOOP_381_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59918:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59920:2: warning: Added loop label VITIS_LOOP_383_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < RowsColsA; c++) {
+ ^~~
+ VITIS_LOOP_383_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59920:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59927:5: warning: Added loop label VITIS_LOOP_390_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsColsA; r++) {
+    ^~~
+    VITIS_LOOP_390_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59927:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59929:2: warning: Added loop label VITIS_LOOP_392_4:   [xilinx-label-all-loops]
+ for (int c = 0; c < RowsColsA; c++) {
+ ^~~
+ VITIS_LOOP_392_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:59929:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60478:5: warning: Added loop label VITIS_LOOP_604_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsA; r++) {
+    ^~~
+    VITIS_LOOP_604_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60478:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60480:2: warning: Added loop label VITIS_LOOP_606_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsA; c++) {
+ ^~~
+ VITIS_LOOP_606_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60480:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60487:5: warning: Added loop label VITIS_LOOP_613_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsC; r++) {
+    ^~~
+    VITIS_LOOP_613_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60487:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60489:2: warning: Added loop label VITIS_LOOP_615_4:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsC; c++) {
+ ^~~
+ VITIS_LOOP_615_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60489:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60514:5: warning: Added loop label VITIS_LOOP_659_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsA; r++) {
+    ^~~
+    VITIS_LOOP_659_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60514:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60516:2: warning: Added loop label VITIS_LOOP_661_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsA; c++) {
+ ^~~
+ VITIS_LOOP_661_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60516:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60520:5: warning: Added loop label VITIS_LOOP_665_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsB; r++) {
+    ^~~
+    VITIS_LOOP_665_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60520:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60522:2: warning: Added loop label VITIS_LOOP_667_4:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsB; c++) {
+ ^~~
+ VITIS_LOOP_667_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60522:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60528:5: warning: Added loop label VITIS_LOOP_673_5:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsC; r++) {
+    ^~~
+    VITIS_LOOP_673_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60528:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60530:2: warning: Added loop label VITIS_LOOP_675_6:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsC; c++) {
+ ^~~
+ VITIS_LOOP_675_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:60530:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61976:5: warning: Added loop label VITIS_LOOP_1547_1:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsA; r++) {
+    ^~~
+    VITIS_LOOP_1547_1: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61976:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61978:2: warning: Added loop label VITIS_LOOP_1549_2:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsA; c++) {
+ ^~~
+ VITIS_LOOP_1549_2: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61978:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61984:5: warning: Added loop label VITIS_LOOP_1555_3:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsA; r++) {
+    ^~~
+    VITIS_LOOP_1555_3: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61984:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61986:2: warning: Added loop label VITIS_LOOP_1557_4:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsA; c++) {
+ ^~~
+ VITIS_LOOP_1557_4: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61986:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61990:5: warning: Added loop label VITIS_LOOP_1561_5:   [xilinx-label-all-loops]
+    for (int r = 0; r < RowsA; r++) {
+    ^~~
+    VITIS_LOOP_1561_5: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61990:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61992:2: warning: Added loop label VITIS_LOOP_1563_6:   [xilinx-label-all-loops]
+ for (int c = 0; c < RowsA; c++) {
+ ^~~
+ VITIS_LOOP_1563_6: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61992:2: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61996:5: warning: Added loop label VITIS_LOOP_1567_7:   [xilinx-label-all-loops]
+    for (int r = 0; r < ColsA; r++) {
+    ^~~
+    VITIS_LOOP_1567_7: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61996:5: note: FIX-IT applied suggested code changes
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61998:2: warning: Added loop label VITIS_LOOP_1569_8:   [xilinx-label-all-loops]
+ for (int c = 0; c < ColsA; c++) {
+ ^~~
+ VITIS_LOOP_1569_8: 
+/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/.autopilot/db/kernel_cholesky_0.pp.0.cpp:61998:2: note: FIX-IT applied suggested code changes

@@ -1,0 +1,921 @@
+---
+MainSourceFile:  /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          1449188
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          1449654
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          1450121
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        /tools/Xilinx/Vitis/2024.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          1733584
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_44_1:  '
+    FileOffset:      44
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2105791
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_44_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_1:  '
+    FileOffset:      57
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2106243
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_64_2:  '
+    FileOffset:      64
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2106476
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_64_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_3:  '
+    FileOffset:      69
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2106695
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      91
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      94
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      97
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      100
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_118_1:  '
+    FileOffset:      118
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2108797
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_118_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2108875
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_129_3:  '
+    FileOffset:      129
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2109251
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_129_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_152_1:  '
+    FileOffset:      152
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2110216
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_152_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_162_2:  '
+    FileOffset:      162
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2110497
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_162_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_171_3:  '
+    FileOffset:      171
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2110767
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_171_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_BRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      192
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      195
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      198
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_213_1:  '
+    FileOffset:      213
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2112776
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_220_2:  '
+    FileOffset:      220
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2113034
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_220_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_226_3:  '
+    FileOffset:      226
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2113254
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_226_3: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      245
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      248
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      251
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      269
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      273
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      276
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      279
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      283
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      286
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_1:  '
+    FileOffset:      116
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2119357
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_120_2:  '
+    FileOffset:      120
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2119498
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_120_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_127_3:  '
+    FileOffset:      127
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2119621
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_127_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_4:  '
+    FileOffset:      137
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2119875
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_143_5:  '
+    FileOffset:      143
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2120081
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_143_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_148_6:  '
+    FileOffset:      148
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2120301
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_148_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_149_7:  '
+    FileOffset:      149
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2120398
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_149_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_169_8:  '
+    FileOffset:      169
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2121019
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_169_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_194_9:  '
+    FileOffset:      194
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2122052
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_194_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_200_10:  '
+    FileOffset:      200
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2122291
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_200_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_201_11:  '
+    FileOffset:      201
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2122388
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_201_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_204_12:  '
+    FileOffset:      204
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2122517
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_204_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_222_13:  '
+    FileOffset:      222
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2123059
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_222_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_247_14:  '
+    FileOffset:      247
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124092
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_247_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_251_15:  '
+    FileOffset:      251
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124247
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_251_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_260_16:  '
+    FileOffset:      260
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124509
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_260_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_265_17:  '
+    FileOffset:      265
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124732
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_265_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_266_18:  '
+    FileOffset:      266
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124830
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_266_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_269_19:  '
+    FileOffset:      269
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2124961
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_269_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_295_1:  '
+    FileOffset:      295
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2125685
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_295_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_323_2:  '
+    FileOffset:      323
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2126568
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_323_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_330_3:  '
+    FileOffset:      330
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2126904
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_330_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_334_4:  '
+    FileOffset:      334
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127049
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_334_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_341_5:  '
+    FileOffset:      341
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127172
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_341_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_351_6:  '
+    FileOffset:      351
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127426
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_351_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_357_7:  '
+    FileOffset:      357
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127632
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_357_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_362_8:  '
+    FileOffset:      362
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127852
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_362_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_363_9:  '
+    FileOffset:      363
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2127949
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_363_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_366_10:  '
+    FileOffset:      366
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2128078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_366_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_386_11:  '
+    FileOffset:      386
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2128714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_386_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_393_12:  '
+    FileOffset:      393
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2129078
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_393_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_397_13:  '
+    FileOffset:      397
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2129282
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_397_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_399_14:  '
+    FileOffset:      399
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2129431
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_399_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_423_15:  '
+    FileOffset:      423
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2130609
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_423_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_426_16:  '
+    FileOffset:      426
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2130768
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_426_16: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_436_17:  '
+    FileOffset:      436
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2131251
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_436_17: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_455_18:  '
+    FileOffset:      455
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2132167
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_455_18: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_464_19:  '
+    FileOffset:      464
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2132486
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_464_19: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_465_20:  '
+    FileOffset:      465
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2132587
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_465_20: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_468_21:  '
+    FileOffset:      468
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2132724
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_468_21: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_472_22:  '
+    FileOffset:      472
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2132855
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_472_22: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_481_23:  '
+    FileOffset:      481
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2133129
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_481_23: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_486_24:  '
+    FileOffset:      486
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2133368
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_486_24: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_487_25:  '
+    FileOffset:      487
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2133470
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_487_25: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_490_26:  '
+    FileOffset:      490
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2133609
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_490_26: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_506_1:  '
+    FileOffset:      506
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2134090
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_506_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, add + fabric is invalid combination for bind_op'
+    FileOffset:      547
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_559_1:  '
+    FileOffset:      559
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2135715
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_559_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_590_1:  '
+    FileOffset:      590
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2137326
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_590_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_592_2:  '
+    FileOffset:      592
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2137348
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_592_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_594_3:  '
+    FileOffset:      594
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2137458
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_594_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_609_4:  '
+    FileOffset:      609
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_609_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_613_5:  '
+    FileOffset:      613
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138151
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_613_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_616_6:  '
+    FileOffset:      616
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138314
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_616_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_625_7:  '
+    FileOffset:      625
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138573
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_625_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_628_8:  '
+    FileOffset:      628
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_628_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_632_9:  '
+    FileOffset:      632
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138742
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_632_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_636_10:  '
+    FileOffset:      636
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2138844
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_636_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_659_11:  '
+    FileOffset:      659
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2139404
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_659_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_669_12:  '
+    FileOffset:      669
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2139810
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_669_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_680_13:  '
+    FileOffset:      680
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2140207
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_680_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_691_1:  '
+    FileOffset:      691
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2140646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_691_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_693_2:  '
+    FileOffset:      693
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2140706
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_693_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_717_3:  '
+    FileOffset:      717
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2141478
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_717_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_756_1:  '
+    FileOffset:      756
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2142617
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_756_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_798_1:  '
+    FileOffset:      798
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2144455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_798_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      920
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      925
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      928
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      931
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      936
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      939
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      942
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Resource with core_name: FIFO_LUTRAM pragma is ignored, because this core doesn''t exist at all '
+    FileOffset:      947
+    FilePath:        /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp
+    Replacements:    
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_90_1:  '
+    FileOffset:      90
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2151918
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_90_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_104_1:  '
+    FileOffset:      104
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2152346
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_104_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_190_1:  '
+    FileOffset:      190
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2153420
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_190_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_2:  '
+    FileOffset:      229
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2154675
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_241_3:  '
+    FileOffset:      241
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2155115
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_241_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_246_4:  '
+    FileOffset:      246
+    FilePath:        test.cpp
+    Replacements:    
+      - FilePath:        /home/yxh/fpga-amd2025/security/L1/tests/hmac/sha256/hls/hls/.autopilot/db/test.pp.0.cpp
+        Offset:          2155388
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_246_4: '
+...

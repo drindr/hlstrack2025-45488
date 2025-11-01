@@ -1,0 +1,228 @@
+<ENTRY>
+{
+ "thisFile": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Nov  1 13:23:02 2025",
+ "timestampMillis": "1761974582366",
+ "buildStep": {
+  "cmdId": "bf9297d6-ecf2-4e03-b680-2ba493443766",
+  "name": "vitis-run",
+  "logFile": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/logs/hls.steps.log",
+  "commandLine": "/tools/Xilinx/Vitis/2024.2/bin/unwrapped/lnx64.o/vitis-run  --mode hls --config /home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg --cosim --work_dir hls --part xc7z020-clg484-1 ",
+  "args": [
+   "--mode",
+   "hls",
+   "--config",
+   "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls_config.cfg",
+   "--cosim",
+   "--work_dir",
+   "hls",
+   "--part",
+   "xc7z020-clg484-1"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Nov  1 13:23:02 2025",
+ "timestampMillis": "1761974582367",
+ "status": {
+  "cmdId": "bf9297d6-ecf2-4e03-b680-2ba493443766",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585897",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "kernel_cholesky_0",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/kernel/kernel_cholesky_0.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "buildStep": {
+  "cmdId": "43450cfa-ea7e-4d92-a463-86ab8542c1bb",
+  "name": "",
+  "logFile": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "status": {
+  "cmdId": "43450cfa-ea7e-4d92-a463-86ab8542c1bb",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "report": {
+  "path": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls/sim/report/kernel_cholesky_0_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "report": {
+  "path": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "report": {
+  "path": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "report": {
+  "path": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:05 2025",
+ "timestampMillis": "1761974585898",
+ "report": {
+  "path": "/home/yxh/fpga-amd2025/solver/L1/tests/cholesky/complex_fixed_arch0/hls/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Nov  1 13:23:46 2025",
+ "timestampMillis": "1761974626082",
+ "status": {
+  "cmdId": "43450cfa-ea7e-4d92-a463-86ab8542c1bb",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Nov  1 13:23:46 2025",
+ "timestampMillis": "1761974626187",
+ "status": {
+  "cmdId": "bf9297d6-ecf2-4e03-b680-2ba493443766",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:46 2025",
+ "timestampMillis": "1761974626187",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Nov  1 13:23:46 2025",
+ "timestampMillis": "1761974626187",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

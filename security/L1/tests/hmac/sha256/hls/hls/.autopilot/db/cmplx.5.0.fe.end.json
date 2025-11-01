@@ -1,0 +1,279 @@
+{
+    "1": {
+        "name": "hash",
+        "file": "test.cpp",
+        "fileloc": "56",
+        "instructions": "12",
+        "total_instructions": "974",
+        "calls": "16",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "mergeKipad<32, 64, 256, 64>",
+        "file": "hmac.hpp",
+        "fileloc": "143",
+        "instructions": "39",
+        "total_instructions": "80",
+        "calls": "17 8",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "mergeKopad<32, 64, 256, 32, 64>",
+        "file": "hmac.hpp",
+        "fileloc": "207",
+        "instructions": "27",
+        "total_instructions": "74",
+        "calls": "5 13",
+        "basicblocks": "4",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "4": {
+        "name": "hmacDataflow<32, 64, 256, 32, 64, sha256_wrapper>",
+        "file": "hmac.hpp",
+        "fileloc": "260",
+        "instructions": "37",
+        "total_instructions": "2433",
+        "calls": "9 7 12",
+        "basicblocks": "1"
+    },
+    "0": {
+        "name": "test_hmac_sha256",
+        "file": "test.cpp",
+        "fileloc": "65",
+        "instructions": "17",
+        "total_instructions": "2450",
+        "calls": "4",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "mergeKopad<32, 64, 256, 32, 64>_Pipeline_VITIS_LOOP_220_2",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/hmac.hpp",
+        "fileloc": "207",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "sha256Digest_unroll2<256>",
+        "file": "sha224_256.hpp",
+        "fileloc": "568",
+        "instructions": "91",
+        "total_instructions": "380",
+        "calls": "19",
+        "basicblocks": "7",
+        "loads": {
+            "L": "8"
+        },
+        "loops": {
+            "L": "1",
+            "N": "1"
+        }
+    },
+    "7": {
+        "name": "msgHash<32, 64, 256, 32, 64, sha256_wrapper>",
+        "file": "hmac.hpp",
+        "fileloc": "180",
+        "instructions": "30",
+        "total_instructions": "1084",
+        "calls": "2 1",
+        "basicblocks": "1"
+    },
+    "8": {
+        "name": "mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_171_3",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/hmac.hpp",
+        "fileloc": "143",
+        "instructions": "18",
+        "total_instructions": "18",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "kpad<32, 64, 256, 32, 64, sha256_wrapper>",
+        "file": "hmac.hpp",
+        "fileloc": "110",
+        "instructions": "214",
+        "total_instructions": "238",
+        "calls": "18",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "10": {
+        "name": "preProcessing_Pipeline_LOOP_SHA256_GEN_COPY_TAIL_AND_ONE",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/sha224_256.hpp",
+        "fileloc": "82",
+        "instructions": "252",
+        "total_instructions": "252",
+        "calls": "",
+        "basicblocks": "95",
+        "loads": {
+            "L": "15"
+        },
+        "stores": {
+            "L": "84"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "preProcessing_Pipeline_LOOP_SHA256_GEN_FULL_BLKS",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/sha224_256.hpp",
+        "fileloc": "82",
+        "instructions": "100",
+        "total_instructions": "100",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "resHash<32, 64, 256, 32, 64, sha256_wrapper>",
+        "file": "hmac.hpp",
+        "fileloc": "236",
+        "instructions": "26",
+        "total_instructions": "1074",
+        "calls": "3 15",
+        "basicblocks": "1"
+    },
+    "13": {
+        "name": "mergeKopad<32, 64, 256, 32, 64>_Pipeline_VITIS_LOOP_226_3",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/hmac.hpp",
+        "fileloc": "207",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "preProcessing",
+        "file": "sha224_256.hpp",
+        "fileloc": "82",
+        "instructions": "204",
+        "total_instructions": "556",
+        "calls": "11 10",
+        "basicblocks": "24",
+        "loads": {
+            "L": "14"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "hash",
+        "file": "test.cpp",
+        "fileloc": "56",
+        "instructions": "12",
+        "total_instructions": "974",
+        "calls": "16",
+        "basicblocks": "1"
+    },
+    "16": {
+        "name": "sha256_top<32, 256>",
+        "file": "sha224_256.hpp",
+        "fileloc": "911",
+        "instructions": "26",
+        "total_instructions": "962",
+        "calls": "14 6",
+        "basicblocks": "1"
+    },
+    "17": {
+        "name": "mergeKipad<32, 64, 256, 64>_Pipeline_VITIS_LOOP_162_2",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/hmac.hpp",
+        "fileloc": "143",
+        "instructions": "23",
+        "total_instructions": "23",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "kpad<32, 64, 256, 32, 64, sha256_wrapper>_Pipeline_VITIS_LOOP_120_2",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/hmac.hpp",
+        "fileloc": "119",
+        "instructions": "24",
+        "total_instructions": "24",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "sha256Digest_unroll2<256>_Pipeline_VITIS_LOOP_636_10",
+        "file": "\/home\/yxh\/fpga-amd2025\/security\/L1\/include\/xf_security\/sha224_256.hpp",
+        "fileloc": "568",
+        "instructions": "289",
+        "total_instructions": "289",
+        "calls": "",
+        "basicblocks": "23",
+        "loads": {
+            "L": "33"
+        },
+        "stores": {
+            "L": "42"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

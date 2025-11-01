@@ -1,0 +1,39 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/yxh/fpga-amd2025/data_compression/L1/tests/lz4_compress/hls/hls/.autopilot/db/lz4_compress_test.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp</string>
+      <key>line</key>
+      <integer>239</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>&apos;Resource pragma&apos; is deprecated, use &apos;bind_op/bind_storage pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5538</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp</string>
+      <key>line</key>
+      <integer>239</integer>
+      <key>column</key>
+      <integer>60</integer>
+      <key>message</key>
+      <string>&apos;xpm_memory&apos; in &apos;#pragma HLS Resource&apos; is deprecated, use &apos;Bind_Storage Pragma&apos; instead</string>
+      <key>ID</key>
+      <integer>5540</integer>
+      <key>WarningOption</key>
+      <string>ignored-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

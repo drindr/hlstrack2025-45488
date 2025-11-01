@@ -1,0 +1,536 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="" msg_id="207-5066" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:641:29" msg_body="overloaded operator &gt;&gt; has higher precedence than comparison operator">
+        <args ClangWarningOption="overloaded-shift-op-parentheses"/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4428" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:641:24" msg_body="place parentheses around the '&gt;&gt;' expression to silence this warning">
+        <args/>
+    </msg>
+    <msg msg_groups="" msg_id="207-4189" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:641:29" msg_body="place parentheses around comparison expression to evaluate it first">
+        <args/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:91:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:94:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:97:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:100:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:192:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:195:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:198:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:245:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:248:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:251:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:269:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:273:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:276:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:279:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:283:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:286:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:920:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:925:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:928:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:931:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:936:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:939:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:942:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-5538" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:947:9" msg_body="'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead">
+        <args ClangWarningOption="ignored-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:58:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="genPad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:65:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="genPad" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:70:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="genPad" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:87:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:90:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eKeyStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:91:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eKeyStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = keyLenStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:94:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = keyLenStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:96:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = keyHashStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:97:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = keyHashStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:99:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = ekeyHashStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpadHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = ekeyHashStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:121:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:130:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="kpad" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mergeKipad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:172:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mergeKipad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:188:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:191:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKipadStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:192:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKipadStrm core = FIFO_BRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:194:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKipadLenStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:195:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKipadLenStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:197:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMergeKipadLenStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:198:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="msgHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMergeKipadLenStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:221:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mergeKopad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:227:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mergeKopad" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:241:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:244:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKopadStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:245:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKopadStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:247:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKopadLenStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:248:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = mergeKopadLenStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:250:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMergeKopadLenStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:251:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="resHash" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMergeKopadLenStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:266:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:268:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eKipadStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:269:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eKipadStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:272:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kipadStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:273:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kipadStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:275:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kopadStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:276:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kopadStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:278:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kopad2Strm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:279:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = kopad2Strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:282:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = msgHashStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:283:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = msgHashStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:285:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMsgHashStrm depth = 4" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:286:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="hmacDataflow" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = eMsgHashStrm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:102:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 16" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:103:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 0 max = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:106:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b0.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:110:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:134:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:141:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:210:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:255:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b1.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:258:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:306:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 16" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:307:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 0 max = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:310:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b0.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:315:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:348:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:355:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:372:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:376:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:476:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = b1.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:479:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="preProcessing" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:507:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dup_strm" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1 avg = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:508:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="dup_strm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:525:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="nextW" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:537:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_round_once" ARG_PragmaIsValid="1" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:547:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_round_once" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=T1 op=add impl=fabric latency=0" ARG_PragmaType="bind_op" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:573:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:587:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = K complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:598:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = H complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:610:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:611:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="max = 64" ARG_PragmaType="latency" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:615:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:624:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = W complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:629:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:637:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 2" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:660:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:670:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest_unroll2" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:694:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="max = 65" ARG_PragmaType="latency" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:697:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk.M complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:701:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = W complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:705:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:713:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="generateMsgSchedule" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:792:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = K complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:802:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = H complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:827:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="min = 1 max = 1" ARG_PragmaType="loop_tripcount" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:828:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="max = 65" ARG_PragmaType="latency" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:846:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaOptions="II = 1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:867:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:883:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256Digest" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:916:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:919:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:920:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = blk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:924:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:925:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:927:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm1 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:928:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm1 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:930:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm2 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:931:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = nblk_strm2 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:935:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:936:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:938:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm1 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:939:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm1 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:941:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm2 depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:942:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = end_nblk_strm2 core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:946:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = w_strm depth = 32" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:947:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sha256_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = w_strm core = FIFO_LUTRAM" ARG_PragmaType="resource" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="test_hmac_sha256" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=test_hmac_sha256" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:214:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = keyStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:216:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenKeyStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:218:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = msgStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:220:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = lenMsgStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:222:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = endLenStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:224:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = hshStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="test.cpp:226:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable = endHshStrm depth = 128" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:646:17" msg_body="Inlining function 'xf::security::internal::sha256_round_once(unsigned int, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;)' into 'void xf::security::internal::sha256Digest_unroll2&lt;256&gt;(hls::stream&lt;unsigned long, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;xf::security::internal::SHA256Block, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="xf::security::internal::sha256_round_once(unsigned int, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;, unsigned int&amp;)" Callee-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp Line 536 Column 0" Caller="void xf::security::internal::sha256Digest_unroll2&lt;256&gt;(hls::stream&lt;unsigned long, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;xf::security::internal::SHA256Block, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp Line 572 Column 0"/>
+    </msg>
+    <msg msg_groups="CODE_UNSUPPORTED" msg_id="214-131" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:642:30" msg_body="Inlining function 'xf::security::internal::nextW(unsigned int*, ap_uint&lt;4&gt;)' into 'void xf::security::internal::sha256Digest_unroll2&lt;256&gt;(hls::stream&lt;unsigned long, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;xf::security::internal::SHA256Block, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="xf::security::internal::nextW(unsigned int*, ap_uint&lt;4&gt;)" Callee-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp Line 524 Column 0" Caller="void xf::security::internal::sha256Digest_unroll2&lt;256&gt;(hls::stream&lt;unsigned long, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;xf::security::internal::SHA256Block, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp Line 572 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:255:9" msg_body="Adding 'b1' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:210:9" msg_body="Adding 'b225' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b225"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:157:9" msg_body="Adding 'b81' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b81"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:134:9" msg_body="Adding 'b' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:106:9" msg_body="Adding 'b0' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="b0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-377" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:615:9" msg_body="Adding 'blk' into disaggregation list because there's array-partition pragma applied on the struct field">
+        <args Name="blk"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:254:25" msg_body="Disaggregating variable 'b1'">
+        <args Name="b1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:209:25" msg_body="Disaggregating variable 'b225'">
+        <args Name="b225"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:156:25" msg_body="Disaggregating variable 'b81'">
+        <args Name="b81"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:133:25" msg_body="Disaggregating variable 'b'">
+        <args Name="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:105:14" msg_body="Disaggregating variable 'b0'">
+        <args Name="b0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_DISAGGREGATE" msg_id="214-210" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:614:25" msg_body="Disaggregating variable 'blk'">
+        <args Name="blk"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:109:13" msg_body="Loop 'LOOP_SHA256_GEN_ONE_FULL_BLK' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="LOOP_SHA256_GEN_ONE_FULL_BLK"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:572:0" msg_body="Unrolling loop 'VITIS_LOOP_628_8' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:628:31) in function 'xf::security::internal::sha256Digest_unroll2&lt;256&gt;' completely with a factor of 16">
+        <args Factor="16" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:628:31" LoopName="VITIS_LOOP_628_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:572:0" msg_body="Unrolling loop 'VITIS_LOOP_669_12' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:669:32) in function 'xf::security::internal::sha256Digest_unroll2&lt;256&gt;' completely with a factor of 8">
+        <args Factor="8" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:669:32" LoopName="VITIS_LOOP_669_12"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:87:0" msg_body="Unrolling loop 'LOOP_SHA256_GEN_ONE_FULL_BLK' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:109:13) in function 'xf::security::internal::preProcessing' completely with a factor of 16">
+        <args Factor="16" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:109:13" LoopName="LOOP_SHA256_GEN_ONE_FULL_BLK"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:87:0" msg_body="Unrolling loop 'LOOP_SHA256_GEN_COPY_TAIL_ONLY' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:213:13) in function 'xf::security::internal::preProcessing' completely with a factor of 16">
+        <args Factor="16" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:213:13" LoopName="LOOP_SHA256_GEN_COPY_TAIL_ONLY"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:87:0" msg_body="Unrolling loop 'LOOP_SHA256_GEN_L_ONLY_BLK' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:257:13) in function 'xf::security::internal::preProcessing' completely with a factor of 14">
+        <args Factor="14" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:257:13" LoopName="LOOP_SHA256_GEN_L_ONLY_BLK"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:87:0" msg_body="Unrolling loop 'LOOP_SHA256_GEN_PAD_13_ZEROS' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:140:13) in function 'xf::security::internal::preProcessing' completely with a factor of 13">
+        <args Factor="13" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:140:13" LoopName="LOOP_SHA256_GEN_PAD_13_ZEROS"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:114:0" msg_body="Unrolling loop 'VITIS_LOOP_129_3' (/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:129:31) in function 'xf::security::internal::kpad&lt;32, 64, 256, 32, 64, sha256_wrapper&gt;' completely with a factor of 64">
+        <args Factor="64" LoopLoc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp:129:31" LoopName="VITIS_LOOP_129_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test.cpp:60:0" msg_body="Inlining function 'void xf::security::sha256&lt;32&gt;(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;) (.15.29.41.63.76)' into 'sha256_wrapper&lt;32, 64, 256&gt;::hash(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="void xf::security::sha256&lt;32&gt;(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;) (.15.29.41.63.76)" Callee-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp Line 996 Column 0" Caller="sha256_wrapper&lt;32, 64, 256&gt;::hash(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File test.cpp Line 60 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="test.cpp:70:0" msg_body="Inlining function 'void xf::security::hmac&lt;32, 64, 256, 32, 64, sha256_wrapper&gt;(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)' into 'test_hmac_sha256(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)'">
+        <args Callee="void xf::security::hmac&lt;32, 64, 256, 32, 64, sha256_wrapper&gt;(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Callee-DebugLoc="File /home/yxh/fpga-amd2025/security/L1/include/xf_security/hmac.hpp Line 345 Column 0" Caller="test_hmac_sha256(hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;32&gt;, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;64&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;, hls::stream&lt;ap_uint&lt;256&gt;, 0&gt;&amp;, hls::stream&lt;bool, 0&gt;&amp;)" Caller-DebugLoc="File test.cpp Line 70 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:578:0" msg_body="Applying array_partition to '_ZZN2xf8security8internal20sha256Digest_unroll2ILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_INS1_11SHA256BlockELi0EEERNS4_I7ap_uintIXT_EELi0EEES8_E1K': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZN2xf8security8internal20sha256Digest_unroll2ILi256EEEvRN3hls6streamImLi0EEERNS4_IbLi0EEERNS4_INS1_11SHA256BlockELi0EEERNS4_I7ap_uintIXT_EELi0EEES8_E1K"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:156:25" msg_body="Applying array_partition to 'b81': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b81"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:597:18" msg_body="Applying array_partition to 'H': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="H"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:623:22" msg_body="Applying array_partition to 'W': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="W"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:646:35" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:526:23" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:527:31" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:528:31" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-358" msg_severity="WARNING" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:529:33" msg_body="Array transformation on index using bit extension logic may lead to poor performance. Please use int or long for array index computation to benefit from optimizations."/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="/home/yxh/fpga-amd2025/security/L1/include/xf_security/sha224_256.hpp:918:27" msg_body="Aggregating fifo (hls::stream) variable 'blk_strm' with compact=bit mode in 512-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="512" HwTyName="fifo (hls::stream)" Name="blk_strm"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

@@ -1,0 +1,156 @@
+
+
+================================================================
+== Vitis HLS Report for 'lzCompress_6_4_65536_6_1_4096_64_Pipeline_lz_left_bytes'
+================================================================
+* Date:           Tue Oct 28 22:02:30 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  15.00 ns|  7.026 ns|     1.50 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                    Pipeline                    |
+    |   min   |   max   |    min   |    max   | min | max |                      Type                      |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+    |       66|       66|  0.990 us|  0.990 us|   65|   65|  loop auto-rewind stp (delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- lz_left_bytes  |       64|       64|         3|          2|          2|    32|       yes|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 1
+  Pipeline-0 : II = 2, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.04>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%l = alloca i32 1" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 6 'alloca' 'l' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %compressdStream, i64 666, i64 10, i64 18446744073709551615"   --->   Operation 7 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %inStream, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0"   --->   Operation 8 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %compressdStream, void @empty_3, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0"   --->   Operation 9 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.58ns)   --->   "%store_ln191 = store i7 0, i7 %l" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 10 'store' 'store_ln191' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln191 = br void %for.inc210" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 11 'br' 'br_ln191' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%l_2 = load i7 %l" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 12 'load' 'l_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i7.i32, i7 %l_2, i32 6" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 13 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln191 = br i1 %tmp, void %for.inc210.split, void %cleanup.cont.loopexit.exitStub" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 14 'br' 'br_ln191' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.87ns)   --->   "%l_3 = add i7 %l_2, i7 2" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 15 'add' 'l_3' <Predicate = (!tmp)> <Delay = 1.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%store_ln191 = store i7 %l_3, i7 %l" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 16 'store' 'store_ln191' <Predicate = (!tmp)> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (tmp)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 7.02>
+ST_2 : Operation 17 [1/1] ( I:3.47ns O:3.47ns )   --->   "%outValue = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %inStream" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195]   --->   Operation 17 'read' 'outValue' <Predicate = (!tmp)> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln195 = zext i8 %outValue" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195]   --->   Operation 18 'zext' 'zext_ln195' <Predicate = (!tmp)> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] ( I:3.54ns O:3.54ns )   --->   "%write_ln196 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %compressdStream, i32 %zext_ln195" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196]   --->   Operation 19 'write' 'write_ln196' <Predicate = (!tmp)> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+
+State 3 <SV = 2> <Delay = 7.02>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln192 = specpipeline void @_ssdm_op_SpecPipeline, i32 2, i32 0, i32 0, i32 0, void @empty_4" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:192]   --->   Operation 20 'specpipeline' 'specpipeline_ln192' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln191 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 32, i64 32, i64 32" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln191' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln191 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 22 'specloopname' 'specloopname_ln191' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] ( I:3.47ns O:3.47ns )   --->   "%outValue_1 = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A, i8 %inStream" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195]   --->   Operation 23 'read' 'outValue_1' <Predicate = true> <Delay = 3.47> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 3.47> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln195_1 = zext i8 %outValue_1" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195]   --->   Operation 24 'zext' 'zext_ln195_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] ( I:3.54ns O:3.54ns )   --->   "%write_ln196 = write void @_ssdm_op_Write.ap_fifo.volatile.i32P0A, i32 %compressdStream, i32 %zext_ln195_1" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196]   --->   Operation 25 'write' 'write_ln196' <Predicate = true> <Delay = 3.54> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.54> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 8> <FIFO>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln191 = br void %for.inc210" [/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191]   --->   Operation 26 'br' 'br_ln191' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 15.000ns, clock uncertainty: 1.500ns.
+
+ <State 1>: 5.046ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln191', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191) of constant 0 on local variable 'l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191 [7]  (1.588 ns)
+	'load' operation 7 bit ('l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191) on local variable 'l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191 [10]  (0.000 ns)
+	'add' operation 7 bit ('l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191) [23]  (1.870 ns)
+	'store' operation 0 bit ('store_ln191', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191) of variable 'l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191 on local variable 'l', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:191 [24]  (1.588 ns)
+
+ <State 2>: 7.026ns
+The critical path consists of the following:
+	fifo read operation ('outValue', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195) on port 'inStream' (/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195) [17]  (3.477 ns)
+	fifo write operation ('write_ln196', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196) on port 'compressdStream' (/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196) [19]  (3.549 ns)
+
+ <State 3>: 7.026ns
+The critical path consists of the following:
+	fifo read operation ('outValue', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195) on port 'inStream' (/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:195) [20]  (3.477 ns)
+	fifo write operation ('write_ln196', /home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196) on port 'compressdStream' (/home/yxh/fpga-amd2025/data_compression/L1/include/hw/lz_compress.hpp:196) [22]  (3.549 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
